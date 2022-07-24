@@ -29,7 +29,6 @@ When you try something risky, chancy or hasty, choose an approach and the GM wil
 
 Princess: roll over that approach's number.
 Pain: roll under that approach's number.
-<<<<<<< HEAD
 
 ---
 
@@ -39,7 +38,7 @@ What is your gender
 - Scorching sun
 - Autumn leaves
 - Oblivion
-- Ungodlyhour
+- Ungodly hour
 - Faerie
 - Waxing moon
 - Twilight secrets
@@ -47,5 +46,5 @@ What is your gender
 - Eye of the storm
 - Root of the baobab
 - Lioness
-- Gliding condot
+- Gliding condor
 - Whispers
