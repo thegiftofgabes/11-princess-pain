@@ -1,0 +1,2950 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>text</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><span id="ch001.xhtml"></span></p>
+<section id="ch001.xhtml#here-there-be-monsters" class="level1"
+data-number="1">
+<h1 data-number="1">HERE, THERE, BE MONSTERS!</h1>
+<p>writing, design and layout by <strong>wendi yu</strong>;</p>
+<p>with original art by <strong>Lino Arruda</strong>;</p>
+<p>editing by <strong>Samuel Mui Shen Ern</strong>;</p>
+<p>project management by <strong>Matt Sanders</strong> and
+<strong>Zachary Cox</strong>;</p>
+<p>published by <strong>SoulMuppet Publishing</strong>.</p>
+<p>playtested by <strong>Ani J., Aidan K., Franky Stein, J4K, Jordan S.,
+Nathan R. Palmer, Sasha M. Boyd and Zack M. Phillips.</strong></p>
+<p>collage art by <strong>wendi yu</strong>; ghoul drawing (p. 54) by
+<strong>CosmicOrrery</strong>. Unless specified all images were taken
+from the <strong>Public Domain</strong>. Other images by
+<strong>Rawpixel</strong>; <em>Gratisography</em> and <em>SLAYTINA</em>
+at <strong>Pexels</strong>; <em>0fjd125gk87</em>,
+<em>Alexey_Hulsov</em>, <em>anaterate</em>, <em>Baggeb</em>,
+<em>Ben_Kerckx</em>, <em>jadefalcon3</em>, <em>Peggy_Marco</em> and
+<em>Ungnade</em> at <strong>Pixabay</strong>; <em>Hahifuheho</em> and
+<em>Wuselig</em> at <strong>Wikimedia Commons</strong>; <em>Filip
+Kominik</em>, <em>Lisanto</em>, <em>MaddiesCreation</em> and <em>Will
+Barrow</em> at <strong>Unsplash</strong>; <em>Paul</em>
+<em>Gauguin</em>, <em>Francisco</em> <em>Goya</em>, <em>Virgil</em>
+<em>Finlay</em>, <em>Theodor Kittelsen</em>, <em>Heinrich Kley</em>,
+<em>Rolland H. Livingstone</em>, <em>Pamela Colman Smith</em>,
+<em>Wilhelm Trübner</em>, and countless others.</p>
+<p>This game is for the <em>monsters</em>, the <em>weirdos</em>, the
+<em>freaks</em> and <em>sickos</em>, the <em>insane</em> and the
+<em>cripples</em>, the <em>trannies</em> and <em>fags</em> and
+<em>dykes,</em> <em>cunts</em> and <em>thugs</em> and <em>whores</em>,
+the <em>fatties,</em> the <em>junkies</em>, the <em>illegals,</em> the
+<em>terrorists</em>, the <em>exotic</em>, the <em>undesirables</em>, the
+<em>degenerate,</em> the <em>vermin</em>, the <em>suspicious,</em> the
+<em>anomalies,</em> and every single body who was ever branded for its
+monstrosity.</p>
+<p>We <em>haunt</em> them because they know they are not safe as long as
+we’re still here. And we’re not going <em>anywhere</em>.</p>
+<p>This book would not exist without the help of <strong>Matt</strong>,
+<strong>Zach</strong> and <strong>SoulMuppet</strong>; and all the
+amazing people who <strong>backed</strong> and <strong>rooted</strong>
+for the <em>LATAM Breakout</em> campaign; and <strong>Luna</strong>,
+<strong>Misha</strong>, <strong>Giu</strong> and <strong>Rachi</strong>,
+and <strong>Duamn</strong>, <strong>Sam</strong> and
+<strong>Lino</strong>, and all my partners in crime. I can’t thank you
+enough.</p>
+<p><em>Other monstrous thanks to</em>: the kind and smart people at the
+<em><strong>FKR Collective</strong></em> and <em><strong>RPG
+Latam</strong></em> servers; all the <em>sweet transvestites,</em>
+<em>salty transsexuals</em> &amp; <em>meaty queers</em> that keep
+inspiring me; <strong>Cosmic</strong>, <strong>Jordan</strong>,
+<strong>Caio</strong> and <strong>Franky</strong> for their invaluable
+feedback; <strong>T<del>u</del>e Kwasi Taibo</strong>, <strong>Xaviara
+Divine</strong> and <strong>Anthony Dubois</strong> for the help with
+the depiction of character background <em>#97</em>, the <em>Winter
+Hunger</em>; <strong>Oz Browning</strong> for suggesting the alternate
+<em>beats</em> system; <strong>Nakade</strong> for suggesting the
+<em>darkest hour</em> mechanics; <strong>Nakade</strong> and
+<strong>CosmicOrrery</strong> for help with the <em>magic system</em>;
+too many other lovely people to mention here, so they make some
+<strong>cameos</strong> over the book.</p>
+<p>Above all, to <strong>Cá</strong>, without whom I’m not sure I would
+have <em>survived</em> the process of making it at all. Love may not
+<em>save</em> the world, but it certainly makes it
+<em>bearable</em>.</p>
+<p>Beyond what’s named in <em>page 10</em>, this game was also inspired
+by <em>Electric Bastionland</em> by Chris McDowall; the <em>Powered by
+the Apocalypse</em> system by Meguey and Vincent Baker;
+<em>Microscope</em> by Ben Robbins; <em>Heart: The City Beneath</em> by
+Grant Howitt and Christopher Taylor; <em>Cthulhu Dark</em> by Graham
+Walmsley and <em>Fate Core</em> by Leonard Balsera, Brian Engard, Jeremy
+Keller, Ryan Macklin and Mike Olson.</p>
+<p><em>here, there, be monsters!</em> © 2022 by <em>wendi yu</em> is
+licensed under CC-BY-SA 4.0 unless you’re a <em>corporation</em> or a
+<em>bigot</em> of any kind, in which case you only have the right to
+<em>fuck off and die</em>.</p>
+<hr />
+<blockquote>
+<p>i will say this as bluntly as i know how: i am a transsexual, and
+therefore, i am a monster. (<em>susan stryker – my words to victor
+frankenstein above the village of chamounix</em>)</p>
+</blockquote>
+<blockquote>
+<p>mi bella monstruosidad, mi ejercicio de inventora, de ramera de las
+torcazas. mi ser yo entre tanto parecido, entre tanto domesticado, entre
+tanto metido de los pelos en algo. sin biblias, sin tablas, sin
+geografías, sin nada. sólo mi derecho vital a ser un monstruo, o como me
+llame, o como me salga, como me puedan el deseo y las fuckin’ ganas. mi
+derecho a explorarme, a reinventarme, a hacer de mi mutar mi noble
+ejercicio. a veranearme, otoñarme, invernarme: las hormonas, las ideas,
+las cachas, y toda el alma. ámen. (<em>susy shock – reivindico mi
+derecho a ser un monstruo</em>)</p>
+</blockquote>
+<p><strong><em>a word of warning</em></strong>:</p>
+<p>this book contains <strong><em>bodies</em></strong>. <em>lots</em> of
+bodies, both referenced and illustrated. some of those bodies are
+<strong><em>naked</em></strong>. some of them are
+<strong><em>monstrous</em></strong>,
+<strong><em>grotesque</em></strong>, <strong><em>horrific</em></strong>,
+in many different ways. they were not made with the purpose of being
+offensive, but if any of that makes you <em>uncomfortable</em> or
+<em>disturbed</em>, be advised to proceed with caution. there are also
+mentions of <strong><em>neonazis</em></strong>,
+<strong><em>billionaires</em></strong>,
+<strong><em>aristocrats</em></strong> and
+<strong><em>cops</em></strong>, all of which are supposed to be punched.
+on the other hand, here there be no <strong><em>elves</em></strong> or
+<strong><em>spiders</em></strong> whatsoever.</p>
+<section id="ch001.xhtml#a-premise" class="level2" data-number="1.1">
+<h2 data-number="1.1">A PREMISE</h2>
+<blockquote>
+<p>This game assumes an explicitly queer and anti-capitalist take on the
+Urban Fantasy genre. You don’t need to be queer to enjoy it, but i don’t
+think capitalists are gonna have much fun here.</p>
+</blockquote>
+<p>No matter what they tell you, there’s still
+<strong>weirdness</strong> and <strong>wonder</strong> everywhere. You
+just have to know where to look. At the edges and cracks of
+‘<em>normal</em>’ life we exist, we persist, and we
+<strong>resist</strong>: the <strong>monsters</strong>, the
+<strong>magicians</strong>, the <strong>anomalies</strong>, the
+<strong>freaks</strong>, and the <strong>outcasts</strong>. We gather in
+the shadows, trying our best to live our lives in a world that, when it
+doesn’t exactly fear or hate us, doesn’t even <strong>believe</strong>
+in our existence.</p>
+<p>Yes, I know this <em>can</em> be a metaphor for queer experience, but
+it’s not <em>just</em> that. This is about the
+<strong>monstrous</strong>, the <strong>abnormal</strong>, and the
+<strong>weird</strong>, in <em>any</em> flavour you want, not as
+something to be feared but to be <strong>cherished</strong> and
+<strong>protected</strong>.</p>
+<p>Alas, there are people out there who can’t stand this. They work from
+behind the scenes to protect ‘<strong>normality</strong>’ at all costs.
+This means getting rid of us, by any means necessary. They are often
+successful, but not as much as they’d like. Even so, they are
+resourceful, and they’re good at what they do.</p>
+<p>There are also those who would use the magical and the unusual for
+their own purposes, be it <strong>profit</strong>,
+<strong>knowledge</strong> or <strong>power</strong> (which, one could
+argue, are the <em>same thing</em> in the end). These are even more
+<strong>dangerous</strong> when they manage to get what they want.</p>
+<p>But we’re still here. We’re not going anywhere. <em><strong>And we
+fight back</strong></em>.</p>
+</section>
+<section id="ch001.xhtml#a-beginning" class="level2" data-number="1.2">
+<h2 data-number="1.2">A BEGINNING</h2>
+<p>You are all members of an <strong>organisation</strong> dedicated to
+protecting the weird, the monstrous, the anomalous, and the magical. You
+are also, in some way or another, <em>weird, monstrous, abnormal</em>,
+<em>anomalous,</em> or <em>magical</em> yourselves. Preferably <em>for
+me</em>, you’re a bunch of anarcho-communist queers as well, but you do
+you, no judgement. Just know that <strong>no bigots</strong> of any kind
+are allowed to play this game, at the risk of being
+<strong>hexed</strong>, <strong>cursed</strong> and otherwise
+<strong>jinxed</strong>. Remember: <em>no bigots, only
+bigfoots</em>.</p>
+<p>Your group is not <em>all-powerful</em>. It is not associated with
+any <em>government</em> or <em>corporation</em>. It is definitely not
+structured in a <em>militaristic</em> or <em>hierarchical</em> model. It
+does not have stuff like a ‘<em>budget</em>’ or ‘<em>orders from the
+higher-ups</em>’. It <em>is</em>, however, organised and coordinated; it
+<em>has</em> to be. It was created with some goals in mind:
+<strong>protect</strong> others like you from persecution and
+exploitation by people like <em>The Bureau</em> or <em>The
+Brotherhood</em> (more on those later), <strong>prevent</strong> stupid
+assholes (like nazis) from using magic to achieve their nefarious goals,
+and overall, <em>keep the world <strong>weird</strong></em>.</p>
+<p>This game is, in a way, a response to a lot of things. Most of all,
+<em>Hellboy</em> (and the BPRD) and the <em>SCP Foundation</em>, but
+also books by Neil Gaiman (particularly <em>American Gods</em>,
+<em>Anansi Boys</em>, <em>Neverwhere</em> and <em>The Books of
+Magic</em>), Charles Stross (<em>The Laundry Files</em> series) and
+China Miéville (specifically <em>Kraken</em>), and games like <em>Delta
+Green</em> or the <em>World of Darkness</em> universe. Some of it was
+taken from a forgotten <em>Dresden Files RPG</em> campaign I planned
+many years ago and some of it came from the notes for a novel I’m
+writing as a middle finger to some transphobic fantasy writers. It’s
+also influenced by getting annoyed at how many nazis there are in occult
+circles. Overall, it’s my take on the <strong>Urban Fantasy</strong>
+genre and its tropes, while feeling <em>monstrous</em> myself. It’s
+taking bits and pieces from all those different things and stitching
+together a monster in my own fractured image.</p>
+<p>This is a game about monsters, anomalies, magicians and other weirdos
+fighting back and protecting the oppressed against those who would
+exploit and erase them. And punching nazis, of course, for <em>all nazis
+must be punched</em>.</p>
+<p>Ok, moving on.</p>
+<p>Before starting the game, discuss the need for <strong>safety
+tools</strong>, which are tools that facilitate the creation of a
+comfortable and safe environment for <em>all</em> of you. I like the
+<em>Lines and Veils</em> system and the <em>X-Card</em>, but choose
+whatever suits you best. Most of all, be <strong>kind</strong> and
+<strong>trust</strong> each other.</p>
+<p>Next step is creating a <strong>manifesto</strong> together: take
+turns declaring an element, <em>any</em> element, you’d like to either
+<em>have</em> or <em>not</em> have in your game. For example, I want
+<em>meat witches</em>, you don’t want <em>cellphones</em>, she wants
+<em>tentacles</em> or they don’t want <em>capitalism</em>. In any case
+of disagreements, state your arguments and have a vote. Or flip a coin.
+Whatever works for you. The list is finished when someone says something
+like “<em>ok, I think we have enough already</em>.”</p>
+<p>Finally, decide which one of you will play as the person
+formerly-known-as-GM / DM / Referee / whatever, who mediates conflicts,
+calls for rolls, narrates the adventures and plays the NPCs. Come up
+with a title for them. I’ll call them the <strong>Organizer</strong> for
+now.</p>
+</section>
+<section id="ch001.xhtml#your-character" class="level2"
+data-number="1.3">
+<h2 data-number="1.3">YOUR CHARACTER</h2>
+<p>Come up with a <strong>name</strong> and/or a
+<strong>callsign</strong> for your character, what the others can call
+them, and the <strong>pronouns</strong> they use.</p>
+<p>Think of a <strong>background</strong> for your character: what did
+they do before this story began? Alternatively, you can also roll
+<strong>1d100</strong> on a list of <strong>premade backgrounds</strong>
+below.</p>
+<p>Describe what your character <strong>looks</strong> like. Ask another
+player to give a small <strong>detail</strong> they think is fitting for
+your character. Use it if you like it, or twist it in your own image if
+you don’t.</p>
+<p>Assign <strong>two tags</strong> for <strong>each</strong> of the
+following verbs:</p>
+<ul>
+<li><p><strong>BE</strong>: anything that significantly
+<strong>defines</strong> your character. (e.g., ‘<em>deeply
+empathetic</em>’, ‘<em>amateur coroner</em>’, ‘<em>none more goth</em>’,
+‘<em>life of the party</em>’ etc.)</p></li>
+<li><p><strong>HAVE</strong>: anything important that your character
+<strong>carries</strong> with them, <em>literally or not</em>. (e.g.,
+‘<em>my mother’s sword</em>’, ‘<em>a worn grimoire</em>’, ‘<em>a broken
+heart</em>’, ‘<em>the hopes of my people</em>’ etc.)</p></li>
+<li><p><strong>DO</strong>: anything your character <strong>knows
+how</strong> to do especially well. (e.g., ‘<em>car theft</em>’,
+‘<em>kung fu fighting</em>’, ‘<em>talking myself out of trouble</em>’,
+‘<em>eating literally anything</em>’ etc.)</p></li>
+</ul>
+<p>Tags are <em>not</em> rigid. You can <strong>HAVE</strong> ‘friends
+in high places’, or you can <strong>BE</strong> ‘friends with
+influential people’, for example.</p>
+<p>If you want your character to use Magic, you need a <strong>MAGIC
+TAG</strong>. That means one of your tags (BE, HAVE or DO, you choose)
+should <strong>explicitly state</strong> that you can use Magic in some
+way. More on how magic works in the ‘<em>Our Game</em>’ section.</p>
+<section id="ch001.xhtml#optional-mechanics" class="level4"
+data-number="1.3.0.1">
+<h4 data-number="1.3.0.1">OPTIONAL MECHANICS</h4>
+<p>If you’re playing a <strong>campaign</strong> or
+<strong>longer</strong> <strong>game</strong>, you can use the following
+guidelines for advancing <strong>character arcs</strong>: define
+<strong>two</strong> things your character <strong>WANTS</strong> and
+<strong>one</strong> thing they <strong>NEED</strong>.</p>
+<p>Their <strong>WANTS</strong> represent their <strong>conscious
+objectives</strong>. Their <strong>NEED</strong> represents something
+that they <em>have</em> to <strong>go through</strong>, but not
+necessarily something they <em>want</em> or consciously <em>know</em>
+about, in order to grow and give their story a satisfying
+‘<strong>ending</strong>’. These are <em>not</em> fixed and can
+<strong>change</strong> as you play and as the story leads you to places
+you didn’t anticipate.</p>
+<ul>
+<li><p><em>Examples of <strong>wants</strong></em>: avenge the death of
+my parents; become the master of my craft; find a cure for my
+affliction; learn the secrets of the old world etc.</p></li>
+<li><p><em>Examples of <strong>needs</strong></em>: overcome a trauma;
+learn to care for the smaller things in life; accept myself; find
+forgiveness etc.</p></li>
+</ul>
+<p>If your character gets what they <strong>need</strong>
+<em>before</em> getting what they <strong>want</strong>, they can either
+<strong>retire</strong> in peace or receive a
+<strong>revelation</strong> that will make all <strong>rolls</strong>
+related to their <strong>wants</strong> <strong>easier</strong>
+(<em>explained below</em>).</p>
+<p>If your character gets both their <strong>wants</strong>
+<em>without</em> getting what they <strong>need</strong>, their wants
+will turn out to be not as satisfying as imagined and you can either
+<strong>give up</strong> and retire your character or make them go
+through their <strong>darkest hour</strong> (<em>see below</em>) to
+receive a revelation that will make all <strong>rolls</strong> related
+to their <strong>need</strong> <strong>easier</strong> (<em>explained
+below</em>).</p>
+<p>Whenever you want (or need), define your character’s <strong>darkest
+hour</strong>. This is the <strong>lowest point</strong> in their story,
+the inevitable moment where they have to face their <strong>deepest
+fears</strong>. You can choose to <strong>play</strong> it out or just
+<strong>narrate</strong> it, whatever works for you.</p>
+<p>Both <strong>WANTS</strong> and <strong>NEEDS</strong> have
+<strong>Beats</strong>. Beats are <strong>steps</strong> your character
+has to take in order to get what they <strong>want</strong> and what
+they <strong>need</strong>. Beats are not necessarily the same as
+successes or achievements, they are <em>narratively</em> important
+<strong>moments,</strong> and can even include <em>failures</em> and
+defeats. When playing, assign <strong>4 beats</strong> to
+<strong>each</strong> of your <strong>wants</strong> and your
+<strong>need</strong>. Every time you <strong>reach a beat</strong> you
+can <strong>change</strong> all the other remaining
+<strong>beats</strong> <em>and</em> <strong>one</strong> of your
+<strong>tags</strong> for something else, if you can <em>justify</em>
+how that makes sense in the story.</p>
+<p><em>You <strong>don’t</strong> need to start with any of your beats
+already written.</em></p>
+<p>When you <strong>reach</strong> a beat, cross it out.
+<strong>Each</strong> beat crossed makes the <strong>rolls</strong>
+related to reaching the <strong>next</strong> beat in the list
+<strong>harder</strong>, in the following order:</p>
+<ul>
+<li><p><strong>After BEAT 1</strong>: roll <strong>3d6</strong>, take
+the two <strong>lowest</strong> results.</p></li>
+<li><p><strong>After BEAT 2</strong>: roll <strong>2d6</strong>,
+<strong>minus 1</strong>.</p></li>
+<li><p><strong>After BEAT 3</strong>: roll <strong>2d6</strong>,
+<strong>minus 2</strong>.</p></li>
+</ul>
+<p>Each beat crossed also makes <strong>easier</strong> the
+<strong>rolls</strong> related to their respective
+<strong>wants</strong> or <strong>need</strong> that could end in
+<strong>dying</strong> or <strong>quitting:</strong> roll <strong>2d6 +
+1d6</strong> for <strong>each</strong> beat, take the two
+<strong>highest</strong> values.</p>
+<p>The wants and needs system is intended to provide you with open-ended
+long-term goals, but if it still feels too <em>restrictive</em> for you,
+here’s an <strong>alternative</strong>:</p>
+<ul>
+<li>Don’t worry about <em>general</em> wants and needs. Instead, come up
+with <strong>2 short-term beats</strong> for things your character
+<strong>wants</strong>, and <strong>1</strong> for what you think they
+<strong>need</strong>. When you <strong>reach</strong> a beat,
+<strong>cross</strong> it off and come up with the <strong>next</strong>
+one. <em>Everything else</em> works the same.</li>
+</ul>
+<p>After you create your characters, describe <em>how they met</em>, how
+and when did they <em>join the group</em>, and <em>what unites them</em>
+beyond their missions.</p>
+</section>
+<section id="ch001.xhtml#character-backgrounds" class="level3"
+data-number="1.3.1">
+<h3 data-number="1.3.1">CHARACTER BACKGROUNDS</h3>
+<p>The suggested backgrounds give you ideas for your
+<strong>tags</strong> and if/why you can use <strong>Magic</strong>. A
+few of them also include custom <strong>mechanics</strong>. Those are
+just <strong>suggestions</strong>, do what you want with them.</p>
+<p>If you’re only interested in the more <em>regular</em> human
+character backgrounds, roll <strong>1d20</strong>. If you want to open
+it up a little for more <em>supernatural</em> options, roll
+<strong>2d20</strong> and add them together. If you want <em>all</em>
+the options, roll <strong>1d100</strong>.</p>
+<section id="ch001.xhtml#antiquarian" class="level4"
+data-number="1.3.1.1">
+<h4 data-number="1.3.1.1">1. Antiquarian</h4>
+<p>Somebody call Marie Kondo, we’ve found a <em>hoarder</em>! Can all
+that junk really spark joy? Take one (magical?) <strong>item</strong>
+that “sparks joy” as a HAVE tag, explain <strong>why</strong> you’re in
+this line of work with a BE tag, and define your
+<strong>speciality</strong> within the field with a DO tag.</p>
+</section>
+<section id="ch001.xhtml#artist" class="level4" data-number="1.3.1.2">
+<h4 data-number="1.3.1.2">2. Artist</h4>
+<p>You’re desperately in need of some <em>inspiration</em>. What
+unconventional avenues have you pursued in search of it? Define your
+<strong>craft</strong> with a DO or BE tag and take some appropriate
+<strong>tools</strong> as a HAVE tag.</p>
+</section>
+<section id="ch001.xhtml#bartender" class="level4"
+data-number="1.3.1.3">
+<h4 data-number="1.3.1.3">3. Bartender</h4>
+<p>What’s the weirdest <em>rumour</em> you’ve heard whispered by
+<em>shadowy figures</em> near closing time? In your line of work, you
+gotta be a good <strong>listener</strong>. Take that and plus your
+<strong>people skills</strong> as BE or DO tags. Take something
+<strong>alcoholic</strong> as a HAVE - you’re gonna need it, even if
+it’s not for you.</p>
+</section>
+<section id="ch001.xhtml#clown" class="level4" data-number="1.3.1.4">
+<h4 data-number="1.3.1.4">4. Clown</h4>
+<p>Oh, <em>great Pagliacci</em>! Does life seem harsh and cruel? Do you
+feel all alone in a threatening world where what lies ahead is vague and
+uncertain? Give yourself some <strong>tragicomic</strong> BE tag; a
+marvellous <strong>circus skill</strong> as a DO tag, and some
+<strong>props</strong> as a HAVE tag.</p>
+</section>
+<section id="ch001.xhtml#conspiracy-theorist" class="level4"
+data-number="1.3.1.5">
+<h4 data-number="1.3.1.5">5. Conspiracy Theorist</h4>
+<p>You know The <em>Truth</em> about the World. And <em>They</em>
+probably know you do. And <em>You</em> know They ‘know’ it. And– Anyway,
+what is this Truth, again? And who are ‘They’? You must have acquired
+some ‘specialised’ <strong>knowledge</strong>,
+<strong>contacts</strong>, and <strong>items</strong> in your unwavering
+search for What’s <em>Really</em> Going On. Write those as tags.</p>
+</section>
+<section id="ch001.xhtml#construction-worker" class="level4"
+data-number="1.3.1.6">
+<h4 data-number="1.3.1.6">6. Construction Worker</h4>
+<p>What sort of <em>oddity</em> did you find hidden inside a wall? How
+did that lead to hanging out with all these weird people (and
+not-people)? Take some <strong>muscles</strong> as a BE or DO tag and
+your <strong>work tools</strong> as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#cook" class="level4" data-number="1.3.1.7">
+<h4 data-number="1.3.1.7">7. Cook</h4>
+<p>What was the most <em>peculiar</em> dish you have ever been asked to
+cook? What’s the otwherworldly <em>flavour</em> you long to taste one
+day? Take a sharp kitchen <strong>knife</strong> as a HAVE and
+<strong>how</strong> to use it as a DO.</p>
+</section>
+<section id="ch001.xhtml#digital-influencer" class="level4"
+data-number="1.3.1.8">
+<h4 data-number="1.3.1.8">8. Digital Influencer</h4>
+<p>You’ll do <em>anything</em> for those likes. And having enough of
+them will allow you to do <em>almost anything</em>. How do you wield
+this kind of power? Take a <strong>smartphone</strong> and your
+<strong>followers</strong> as valuable HAVE tags and represent your
+personal <strong>appeal</strong> with either a BE or a DO tag.</p>
+</section>
+<section id="ch001.xhtml#doctor" class="level4" data-number="1.3.1.9">
+<h4 data-number="1.3.1.9">9. Doctor</h4>
+<p>How did you end up here, Doc? Do you know how to care for
+<em>nonhuman</em> bodies? Do you know how to use <em>anomalous</em>
+methods to treat your patients? And if so, are you willing to? How
+valuable are your medical skills for the community? Define your medical
+<strong>speciality</strong> with a DO tag and take a <strong>first
+aid</strong> kit as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#drag-queen" class="level4"
+data-number="1.3.1.10">
+<h4 data-number="1.3.1.10">10. Drag Queen</h4>
+<p>You better <em>lip-sync for your life</em>, girl. Your makeup is your
+armour. Onstage you’re <em>unstoppable</em>. But what about your life
+offstage? Give yourself a couple of shiny BE or DO tags that showcase
+your <strong>performance</strong> skills and add your <strong>stage
+paraphernalia</strong> as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#filmmaker" class="level4"
+data-number="1.3.1.11">
+<h4 data-number="1.3.1.11">11. Filmmaker</h4>
+<p>What kind of films do you make? Are you an <em>amateur</em> or are
+you already (<em>in)famous</em>? Have you ever caught the
+<em>supernatural</em> on-camera? Take a <strong>camera</strong> as a
+HAVE tag, and a snobbish <strong>knowledge</strong> about bizarre
+European directors or an encyclopaedic understanding of genre tropes (or
+both) as a DO.</p>
+</section>
+<section id="ch001.xhtml#hacker" class="level4" data-number="1.3.1.12">
+<h4 data-number="1.3.1.12">12. Hacker</h4>
+<p>You know what those green characters on black screens mean in that
+movie. Not that one, the other one. There are a lot of <em>peculiar</em>
+things to learn online if you know where to look… and as it happens, you
+actually do. Represent your arcane <strong>knowledge</strong> with a
+tag. Now get up from that chair, stretch a little, and take your
+favourite <strong>gadget</strong> as a HAVE tag and a
+<strong>hacking</strong>-related BE or DO tag.</p>
+</section>
+<section id="ch001.xhtml#journalist" class="level4"
+data-number="1.3.1.13">
+<h4 data-number="1.3.1.13">13. Journalist</h4>
+<p><em>The public has a right to know</em>, and you will do whatever it
+takes to uncover the Truth-with-capital-T. Do you work for a major
+<em>conglomerate</em> or maybe an independent <em>blog</em>? What’s your
+usual beat? Crime, culture, politics? Write your trusted
+<strong>sources</strong> and hidden <strong>recorder</strong> as HAVE
+tags and your <strong>journalistic</strong> <strong>skills</strong> as
+DO tags.</p>
+</section>
+<section id="ch001.xhtml#mechanic" class="level4"
+data-number="1.3.1.14">
+<h4 data-number="1.3.1.14">14. Mechanic</h4>
+<p>You’re great with <em>machines</em>, engines, and all sorts of
+contraptions. How did you learn your craft? Can you fix
+<em>anomalous</em> mechanisms? Grab your <strong>toolkit</strong> as a
+HAVE tag and your <strong>mechanical</strong> skills as a DO.</p>
+</section>
+<section id="ch001.xhtml#musician" class="level4"
+data-number="1.3.1.15">
+<h4 data-number="1.3.1.15">15. Musician</h4>
+<p>Where was the most <em>unusual</em> place you’ve ever had to perform
+in? What <em>genres</em> and <em>instruments</em> do you usually play?
+Incidentally, are you any <em>good</em>? Take your
+<strong>instrument(s)</strong> as a HAVE tag and your
+<strong>performance</strong> skills as a BE or DO. Maybe grab a copy of
+<em>Marvelous Mutations &amp; Merry Musicians</em> too, it’s up to
+you.</p>
+</section>
+<section id="ch001.xhtml#private-investigator" class="level4"
+data-number="1.3.1.16">
+<h4 data-number="1.3.1.16">16. Private Investigator</h4>
+<p>What seemingly <em>unsolvable</em> case keeps you up at night? What,
+or who, are you <em>searching</em> for now? What did you see in the dark
+of a dirty back alley? Take a <strong>gun</strong> and either a
+<strong>camera</strong> or a flask of <strong>whisky</strong> as HAVE
+tags.</p>
+</section>
+<section id="ch001.xhtml#retired-football-player" class="level4"
+data-number="1.3.1.17">
+<h4 data-number="1.3.1.17">17. Retired Football Player</h4>
+<p>The <em>parties</em> never stop, but you’re still <em>bored</em>.
+Where has your <em>ennui</em> taken you? Are you still rich and famous,
+or have you already burned through your fortune? Give yourself a
+divorce, a couple of nice thighs, and great <strong>athletic</strong>
+skills.</p>
+</section>
+<section id="ch001.xhtml#secret-agent" class="level4"
+data-number="1.3.1.18">
+<h4 data-number="1.3.1.18">18. Secret Agent</h4>
+<p>You used to work as a spy for <em>The Man</em>, but
+<em>something</em> made you leave. What was it? Nevertheless, you’re
+still great at what you do and even managed to keep a few fancy
+<strong>gadgets</strong> and trusted <strong>contacts</strong>. Write
+your tags accordingly.</p>
+</section>
+<section id="ch001.xhtml#teacher" class="level4" data-number="1.3.1.19">
+<h4 data-number="1.3.1.19">19. Teacher</h4>
+<p>Your job is to share and nurture knowledge with those who need it. Do
+you enjoy it? Why do you do it? Do your students like you? Write your
+<strong>expertise</strong> as a BE or DO tag, and take a well-stocked
+<strong>collection</strong> about it as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#writer" class="level4" data-number="1.3.1.20">
+<h4 data-number="1.3.1.20">20. Writer</h4>
+<p>You <em>swear</em> you’re working on that novel. What do you usually
+write? Poetry, short stories, nonfiction? Take a mostly useless degree,
+procrastination, and a lot of coffee. Write your abilities with
+<strong>words</strong> as a DO or BE tag, and a <strong>journal</strong>
+full of notes and random facts as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#alchemist" class="level4"
+data-number="1.3.1.21">
+<h4 data-number="1.3.1.21">21. Alchemist</h4>
+<p>Not really ‘<em>just Chemistry</em>’, not really ‘<em>just
+Magic</em>’, but something else in its own right. How do you perceive
+your craft? What made you pursue it? Take some bizarre
+<strong>reagents</strong> and your favourite <strong>creation</strong>
+as HAVE tags. You can take a <strong>MAGIC TAG</strong> if you want, but
+call it <strong>Alchemy</strong>.</p>
+</section>
+<section id="ch001.xhtml#alien-abductee" class="level4"
+data-number="1.3.1.22">
+<h4 data-number="1.3.1.22">22. Alien Abductee</h4>
+<p>One day you were <em>taken</em>. Afterwards, nobody believed you. How
+has it affected your body and mind? Can you remember anything? What have
+they done to you? What did they look like? Give yourself a confusing
+<strong>body</strong> <strong>modification</strong> and a few good
+ufologist <strong>friends</strong>.</p>
+</section>
+<section id="ch001.xhtml#chosen-by-an-elder-god" class="level4"
+data-number="1.3.1.23">
+<h4 data-number="1.3.1.23">23. Chosen-by-an-Elder-God</h4>
+<p>You were chosen, but have no idea <em>why</em>. There <em>must</em>
+be a reason, right? Sure, the tentacles may be a little too much, but
+they’re handy. And you’re already used to <em>Its</em> whispers in your
+ears. What does <em>It</em> tell you? Take a <strong>boon</strong> from
+<em>It</em> as a HAVE tag and a related <strong>uncanny ability</strong>
+as a DO. You can take a <strong>MAGIC TAG</strong> if you want, but call
+it <strong>prayer</strong>.</p>
+</section>
+<section id="ch001.xhtml#escaped-human-sacrifice" class="level4"
+data-number="1.3.1.24">
+<h4 data-number="1.3.1.24">24. Escaped Human Sacrifice</h4>
+<p>The stars were right. Everything was going according to plan. Until
+you managed to break out of your bonds right before the obsidian dagger
+could pierce your heart — or something along those lines — and in doing
+so you ruined a ritual decades in the making.
+<em><strong>Why</strong></em> were you chosen?
+<em><strong>What</strong></em> did you take with you before escaping?
+Are they <em><strong>still</strong></em> after you? Write your tags
+accordingly.</p>
+</section>
+<section id="ch001.xhtml#ex-cultist" class="level4"
+data-number="1.3.1.25">
+<h4 data-number="1.3.1.25">25. Ex-cultist</h4>
+<p>Those people you used to run with were surely <em>something</em>,
+huh? What was it like for you, back then? What did you do together? Why
+did you leave? Do you miss them? Do you fear them? Grab an ancient
+<strong>artefact</strong> you took on your way out as a HAVE tag. You
+can take a <strong>MAGIC TAG</strong> if that’s your thing.</p>
+</section>
+<section id="ch001.xhtml#family-curse-inheritor" class="level4"
+data-number="1.3.1.26">
+<h4 data-number="1.3.1.26">26. Family Curse Inheritor</h4>
+<p>Your ancestors left you a pretty <em>shitty inheritance</em>, going
+back generations. What is it? Do you all turn into frogs when kissed? Or
+is it a <em>haunted house</em>? A creepy <em>music box</em>? Please tell
+me it’s not a creepy music box. <em>How long</em> has your family had to
+deal with it? Have you been prepared to face it? Take a tag that
+represents your <strong>curse</strong> and another for whatever
+<strong>family</strong> you still have left.</p>
+</section>
+<section id="ch001.xhtml#firestarter" class="level4"
+data-number="1.3.1.27">
+<h4 data-number="1.3.1.27">27. Firestarter</h4>
+<p><em>This. Girl. Is on fireee</em>! You can <em>generate</em> and/or
+<em>control</em> <strong>flames</strong> with your mind. How do you do
+it? Is it hard? Do you have <em>complete</em> control over it? What
+happens if you lose control? Can you get burned? When did your powers
+first manifest? Treat your powers as if you were using Magic, but could
+only use the Magic Word <strong>FIRE</strong>!</p>
+</section>
+<section id="ch001.xhtml#magician" class="level4"
+data-number="1.3.1.28">
+<h4 data-number="1.3.1.28">28. Magician</h4>
+<p>Not a Witch. Not a Shaman. Definitely not an Occultist. Still, you
+know how to use <strong>Magic</strong>. But <em>how</em>? Magic is not
+some super-power that you’re just <em>born</em> with. So, <em>why</em>
+can you do it? Did you learn it through ancient books? Did someone teach
+it to you, or what? And <em>how</em> do you do it? Chanting some words,
+waving your hands, brandishing a wand, spilling some blood? Describe
+that with your <strong>MAGIC TAG.</strong></p>
+</section>
+<section id="ch001.xhtml#medium" class="level4" data-number="1.3.1.29">
+<h4 data-number="1.3.1.29">29. Medium</h4>
+<p>You love some gossip, and the <em>dead</em> surely deliver. Do they
+only appear when you call or do they randomly intrude into your daily
+life? What was the scariest thing you’ve seen behind the veil? Do you
+have regular visitors? Whenever you <strong>contact</strong> the dead,
+roll a <strong>d6</strong>. If the result is a <strong>1</strong>, they
+are <strong>pissed</strong>. If it’s between <strong>2 and 4,</strong>
+you can speak to the spirits, but <strong>something else</strong>
+notices you too. On a <strong>5 or 6,</strong> you’re
+<strong>safe</strong>. If I were you, I’d take some kind of
+<strong>amulet</strong> to ward off evil spirits as a HAVE tag too.</p>
+</section>
+<section id="ch001.xhtml#occultist" class="level4"
+data-number="1.3.1.30">
+<h4 data-number="1.3.1.30">30. Occultist</h4>
+<p>Oh, so you do <em>Real</em> Magic<strong>k</strong>, huh? The key is
+the <em>k</em>, right? Fine, you can take a <strong>MAGIC TAG</strong>
+if you want. But please try to keep the details of your solo Sex Magick
+rituals to yourself. So… what’s your thing? Thelema, Chaos Magick,
+diabolism, or something else? Take the appropriate
+<strong>paraphernalia</strong> as HAVE tags.</p>
+</section>
+<section id="ch001.xhtml#oracle" class="level4" data-number="1.3.1.31">
+<h4 data-number="1.3.1.31">31. Oracle</h4>
+<p>You can tell the <strong>future</strong>, but only in pretty
+<em>vague</em> terms. How do your prophecies appear to you? Do they come
+as dreams, visions, whispers in your ear? Do you need to get high to see
+them? Or maybe it’s only when you dream? Whenever you meet that
+<em>trigger</em>, roll a <strong>d6</strong>. If the result is between
+<strong>1 and 3</strong>, you <strong>can’t remember</strong> the vision
+afterwards. If it’s <strong>4 or 5</strong>, you can recall it as
+mysterious <strong>metaphors</strong> to be deciphered. If you get a
+<strong>6</strong>, their meaning is <strong>clear</strong> and you
+immediately understand them.</p>
+</section>
+<section id="ch001.xhtml#possessed" class="level4"
+data-number="1.3.1.32">
+<h4 data-number="1.3.1.32">32. Possessed</h4>
+<p>There’s someone or <em>something</em> else inside you. Sometimes you
+can keep it in check. Sometimes you lose control. <em>Sometimes</em> it
+takes over your body. Where do you go when it’s in charge? How well do
+you two get along? How green is your puke? Ask <strong>someone
+else</strong> to write <strong>half</strong> your tags. You can use
+those <em><strong>if</strong></em> you allow whatever’s possessing you
+to <strong>take over</strong> for a moment. <em>They</em> can take a
+<strong>MAGIC TAG</strong> if they want — <em>you</em> <em>probably</em>
+can’t.</p>
+</section>
+<section id="ch001.xhtml#preacher" class="level4"
+data-number="1.3.1.33">
+<h4 data-number="1.3.1.33">33. Preacher</h4>
+<p>Repent heathens, for <em>you</em> have arrived! You’re a true
+believer, and no one can deny your faith. What do you believe in? You
+can take a <strong>MAGIC TAG</strong> if you want, but treat it as
+<strong>prayer</strong>. Take a sacred <strong>relic</strong> as a HAVE
+tag. If you want some inspiration, feel free to have a look at the
+tables in <em>Apotheosis Janitors</em>.</p>
+</section>
+<section id="ch001.xhtml#reanimator" class="level4"
+data-number="1.3.1.34">
+<h4 data-number="1.3.1.34">34. Reanimator</h4>
+<p>You can <em>raise the dead</em>. But how do you do it? Mad science?
+Necromancy? Something else? And <em>why</em> would you do that, anyway?
+What do you do with those you re-animate? Are they just shambling
+zombies or do they have consciousness? Where do you get the
+‘<em>supplies</em>’? You can take a <strong>MAGIC TAG</strong> or the
+appropriate <strong>tools</strong> and <strong>skills</strong>,
+accordingly.</p>
+</section>
+<section id="ch001.xhtml#shaman" class="level4" data-number="1.3.1.35">
+<h4 data-number="1.3.1.35">35. Shaman</h4>
+<p>You’re supposed to be <em>wise</em>. Are <em>you</em>? You are the
+keeper of the knowledge of your ancestors. You have access to the spirit
+world and beyond by entering a <strong>trance</strong>. You’re a healer,
+a guide, a seer. Do you feel up to the task? Do you get into a trance
+through song and dance or other methods? Take a <strong>MAGIC
+TAG</strong>, and a HAVE tag related to your practice.</p>
+</section>
+<section id="ch001.xhtml#telepath" class="level4"
+data-number="1.3.1.36">
+<h4 data-number="1.3.1.36">36. Telepath</h4>
+<p>Peeking inside people’s <em>thoughts</em> is actually not as
+interesting as you might think. It takes a lot of effort to get through
+the noise and the nonsense. When have you started having this ability?
+How much <em>control</em> do you have over it? Do you have any power
+over the thoughts you access? Treat your powers as if you were using
+Magic, but could only use the Magic Word <strong>MIND</strong>.</p>
+</section>
+<section id="ch001.xhtml#underworld-explorer" class="level4"
+data-number="1.3.1.37">
+<h4 data-number="1.3.1.37">37. Underworld Explorer</h4>
+<p>There are many places <em>below</em> baseline reality, both
+<em>literally</em> and <em>figuratively</em>. You explore them, for
+whatever reason. But no matter how much you descend, you feel you gotta
+dig ever <em>deeper</em>. Is it an obsession, a job, a hobby, all of
+these? How has it <em>changed</em> you? Take the appropriate
+<strong>equipment</strong> and one weird <strong>finding</strong> as
+HAVE tags.</p>
+</section>
+<section id="ch001.xhtml#winged-person" class="level4"
+data-number="1.3.1.38">
+<h4 data-number="1.3.1.38">38. Winged Person</h4>
+<p>You… have <strong>wings</strong>, I guess? How many? What are they
+made of? Feathers? Leather? Metal? Your own skin, grotesquely stretched
+over your hollow bones? Were you born with them, or were they given to
+you, willingly or not? How do you hide them if needed? If they allow you
+to <strong>fly</strong>, write that as a DO tag.</p>
+</section>
+<section id="ch001.xhtml#witch" class="level4" data-number="1.3.1.39">
+<h4 data-number="1.3.1.39">39. Witch</h4>
+<p><em>Everything</em> is a part of nature, you just happen to be more
+attuned to your place in it, and the <em>powers</em> you can channel
+from there. Are you a wise <em>elder</em> that knows all about herbs? A
+charming <em>youth</em> that consorts with devils by the moonlight?
+Maybe <em>both</em>, depending on your mood? How many warts do you have?
+Take a <strong>MAGIC TAG</strong>, a familiar, a broom, whatever, you
+know, <strong>witch-stuff</strong>. Just don’t start with gender
+essentialist bullshit or saying you’re the daughter of the witches they
+couldn’t burn, else you’ll be <strong>cursed</strong> to play the most
+boring game of <em>here, there, be monsters!</em> ever.</p>
+</section>
+<section id="ch001.xhtml#witness" class="level4" data-number="1.3.1.40">
+<h4 data-number="1.3.1.40">40. Witness</h4>
+<p>You saw <em>things</em> you <em>shouldn’t</em>, and now you can’t
+unsee them. In a moment, all of your assumptions were shattered and you
+found yourself in a world full of horror and magic. You need to know
+more and more about it, and it’s starting to look like an addiction.
+What happened? How has that changed you? You can take a <strong>MAGIC
+TAG</strong> if you want, and a few precious
+<strong>connections</strong> on the anomalous underworld as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#alien" class="level4" data-number="1.3.1.41">
+<h4 data-number="1.3.1.41">41. Alien</h4>
+<p>You’re not from around here, but that doesn’t mean you don’t belong.
+Where are you from? What do you look like? How did you get here? What’s
+your attitude towards the Earth? Are there others like you? Do you feel
+alone? You can take a <strong>MAGIC TAG</strong> if you want and
+whatever alien <strong>tech</strong> or <strong>skills</strong> you’ve
+got as HAVE or DO tags.</p>
+</section>
+<section id="ch001.xhtml#anthropomorphic-manifestation" class="level4"
+data-number="1.3.1.42">
+<h4 data-number="1.3.1.42">42. Anthropomorphic Manifestation</h4>
+<p>You’re the physical embodiment of <em>something</em>. What is it? You
+have enormous power over this domain, but <em>only</em> this. How did
+you come here? Have you existed as long as the thing you manifest as? Or
+are you a recent arrival? Were you summoned to this plane? Have you
+spontaneously appeared? You may take a <strong>MAGIC TAG</strong> if you
+want, but you can <strong>only</strong> use Magic
+<strong>related</strong> to the thing you manifest.</p>
+</section>
+<section id="ch001.xhtml#a-bunch-of-goblins-in-a-beekeeper-suit"
+class="level4" data-number="1.3.1.43">
+<h4 data-number="1.3.1.43">43. A bunch of Goblins in a Beekeeper
+suit</h4>
+<p>Nobody took you seriously before, but now they see you eye-to-eye.
+Well, one of you, at least – whoever is the Head today. How many of you
+are there? And why bees? Take that <strong>suit</strong> and a
+<strong>smoke machine</strong> as HAVE tags and
+<strong>beekeeping</strong> as a DO tag.</p>
+</section>
+<section id="ch001.xhtml#atlantis-refugee" class="level4"
+data-number="1.3.1.44">
+<h4 data-number="1.3.1.44">44. Atlantis Refugee</h4>
+<p>Your home is forever <em>gone</em>, sunken beneath the waves. How did
+you survive the cataclysm? Do you know what caused it? What did you
+manage to take with you? Who gave you shelter after the Fall? Are there
+other survivors? How do you resemble modern humans, and how do you
+differ? Did you have supernatural abilities? What about super-advanced
+tech? You can take an ancient Atlantean <strong>relic</strong> as a HAVE
+and a <strong>MAGIC TAG,</strong> if you want one.</p>
+</section>
+<section id="ch001.xhtml#automaton" class="level4"
+data-number="1.3.1.45">
+<h4 data-number="1.3.1.45">45. Automaton</h4>
+<p>You want to make it clear that you are <em>not</em> a
+<em>‘robot’</em>. Those are just mindless machines, while your delicate
+clockwork circuits are actually capable of independent <em>thought</em>.
+Do you remember who built you and with what <em>purpose</em>? How and
+when did you get free? Are you <em>humanoid</em> in appearance, or
+something more <em>uncanny</em>? Can you have <em>feelings</em> and
+sensations? Write your tags accordingly.</p>
+</section>
+<section id="ch001.xhtml#bigfoot" class="level4" data-number="1.3.1.46">
+<h4 data-number="1.3.1.46">46. Bigfoot</h4>
+<p>You’re not very photogenic, but that’s alright. People keep trying to
+<em>catch</em> you on-camera, but you just wanna be left <em>alone</em>.
+Why is that? Do you feel <em>lonely</em>? Are you the <em>last</em> of
+your species? Are you a missing link? Are you just very large and hairy?
+How big are your feet, by the way?</p>
+</section>
+<section id="ch001.xhtml#boto" class="level4" data-number="1.3.1.47">
+<h4 data-number="1.3.1.47">47. Boto</h4>
+<p>You’re a bright pink river dolphin that can turn into a remarkably
+<em>hot</em> person at will, <em>except</em> for the <em>blowhole</em>
+on your forehead. Rumour has it that you just do that to have sex with
+humans and get them pregnant. I mean, not judging if you have a breeding
+kink or anything, but, seriously, do you <em>really</em> do that? Take a
+<strong>MAGIC TAG</strong> if you want and write your
+<strong>underwater-breathing</strong> abilities as a DO or BE tag and a
+HAVE tag that <strong>hides</strong> your <strong>hole</strong>.</p>
+</section>
+<section id="ch001.xhtml#brain-in-a-jar" class="level4"
+data-number="1.3.1.48">
+<h4 data-number="1.3.1.48">48. Brain-In-A-Jar</h4>
+<p>You’re a <em>brain</em>. <em>In a jar</em>. Submerged in a stinky
+fluid, full of wires and other hi-tech equipment. So how the hell did
+you get there? Did a flying fungus-crustacean thing from Pluto try to
+steal your brain? Or was it a nazi mad scientist? A horrible lab
+accident? How do you manage to interact with the world now? Do you have
+a prosthetic body you can sometimes inhabit? Write your tags
+accordingly.</p>
+</section>
+<section id="ch001.xhtml#caipora" class="level4" data-number="1.3.1.49">
+<h4 data-number="1.3.1.49">49. Caipora</h4>
+<p>Tiny, with dark skin completely covered in red hair, you used to roam
+the forest, usually naked and riding a giant boar. Your duty was to
+protect the wild animals from hunters. How exactly you achieved that is
+up to debate. Some say you ‘just’ made them get lost in the forest,
+using your backwards-facing feet to create false tracks. Others say you
+hunted them and ate their flesh. You can also <em>resurrect</em> dead
+animals if needed, but you prefer not to let them die in the first
+place. People say you <em>smoke</em> like a chimney, but are
+<em>terrified</em> of <em>fire</em>. What’s <em>your</em> truth? What
+made you leave your beloved forest? Take a <strong>MAGIC TAG</strong>
+and your <strong>cigarettes</strong> and <strong>Giant Boar</strong> as
+HAVE tags.</p>
+</section>
+<section id="ch001.xhtml#catperson" class="level4"
+data-number="1.3.1.50">
+<h4 data-number="1.3.1.50">50. Catperson</h4>
+<p>UwU meow you’re probably trans or something. Also, you look mostly
+like an unanomalous human with some feline traits. How many and which
+ones do you have? Pointy ears? A fluffy tail? Vertical pupils? Fangs?
+Depending on what traits you have, you will also have corresponding
+abilities, such as but not limited to: pouncing, jumping, seeing in the
+dark, heightened senses, commanding an army of otakus etc. Write your
+tags accordingly.</p>
+</section>
+<section id="ch001.xhtml#centaur" class="level4" data-number="1.3.1.51">
+<h4 data-number="1.3.1.51">51. Centaur</h4>
+<p>You have a <em>humanoid</em> upper body and an <em>equine</em> lower
+body. Some people say you embody the fake dichotomy of nature and
+civilisation, but you know that’s just a bunch of white human nonsense.
+You may have horns or a beard, regardless of gender. Are you really good
+with <em>archery</em>, or is that just a stereotype? Are you a
+<em>scholar</em> who’s great with astronomy or healing? Do you love to
+spend hours <em>chilling</em> on the grass? Both? None? Write your tags
+accordingly and take a <strong>MAGIC TAG</strong> if you want.</p>
+</section>
+<section id="ch001.xhtml#changeling" class="level4"
+data-number="1.3.1.52">
+<h4 data-number="1.3.1.52">52. Changeling</h4>
+<p>You were <em>swapped</em>, either taken or left behind, by
+<em>magical beings</em> – probably as a baby. Why? Who was your new
+<em>family</em>? Did they <em>love</em> you? If you were taken, did you
+fit in? If left behind, did someone notice anything different about you?
+Did you ever meet your original family? Where and who is your
+<em>home</em>? Did you develop any traits from your magical side? If
+yes, take a <strong>MAGIC TAG.</strong> Regardless of your answer, also
+take a magical <strong>artefact</strong> from your inheritance as a HAVE
+tag.</p>
+</section>
+<section id="ch001.xhtml#cuca" class="level4" data-number="1.3.1.53">
+<h4 data-number="1.3.1.53">53. Cuca</h4>
+<p>You’re <em>supposedly</em> an <em>immortal witch</em> with the face
+of an <em>alligator</em>. When you die, you just vomit a huge egg and
+emerge from it as a newborn when it hatches. They say you <em>eat</em>
+misbehaved <em>children</em> and make jewellery from their
+<em>tongues</em>. Is that true? If so, <em>why the fuck</em> would you
+do that? Tongue-jewellery is so <em>demode</em>. Take some <strong>bird
+familiars</strong> and a <strong>MAGIC TAG</strong>.</p>
+</section>
+<section id="ch001.xhtml#dragonborn" class="level4"
+data-number="1.3.1.54">
+<h4 data-number="1.3.1.54">54. Dragonborn</h4>
+<p>You have <em>some</em> connection to <em>dragons</em>, however vague
+that sounds. What is this connection? Maybe you’re a half-dragon hybrid?
+Were you created, born, or transformed? By the way, do dragons still
+<em>exist</em> in this world? If yes, what’s your current relationship
+to them? Do you have <strong>dragon powers</strong> like breathing fire?
+What about draconic <strong>physical traits</strong> like wings, tails,
+claws, scales, horns? Write your tags accordingly and take a
+<strong>MAGIC TAG</strong> while you’re at it.</p>
+</section>
+<section id="ch001.xhtml#duende" class="level4" data-number="1.3.1.55">
+<h4 data-number="1.3.1.55">55. Duende</h4>
+<p>You’re very <em>small</em> (around 1m tall), with <em>pointy
+ears</em> and a <em>beard</em> – regardless of gender – and you’ve
+always looked <em>old</em>. You used to live <em>underground</em>, and
+you’re so used to the dark that you wear <em>sunglasses</em> everywhere.
+Some people say you’re made of <em>stone</em>, but that’s just human
+nonsense. But are you good with <em>tinkering</em> and
+<em>engineering</em>, or is that also just a dumb stereotype? People say
+your <em>pointy hats</em> are kitsch, but you know better. Take a
+<strong>MAGIC TAG</strong> and a pair of cool
+<strong>sunglasses</strong> and a <strong>pointy hat</strong> as HAVE
+tags.</p>
+</section>
+<section id="ch001.xhtml#ectoplasm" class="level4"
+data-number="1.3.1.56">
+<h4 data-number="1.3.1.56">56. Ectoplasm</h4>
+<p>You’re trapped <em>between</em> forms. Not a <em>spirit</em>, but not
+really a <em>body</em> anymore. Kinda <em>gooey</em>. You used to be a
+<em>Medium</em>, but something went wrong and it left you stuck as an
+<strong>ectoplasm</strong>, unable to return to your physical body. What
+happened? Is it hard to keep a coherent form? Can you interact with the
+material world? Do you still feel your body as a <em>phantom limb</em>?
+Can you possess other bodies like a spirit? If you do, treat it as a
+<strong>spell</strong> and take a <strong>MAGIC TAG.</strong></p>
+</section>
+<section id="ch001.xhtml#elemental" class="level4"
+data-number="1.3.1.57">
+<h4 data-number="1.3.1.57">57. Elemental</h4>
+<p>You’re a sapient being made of and representing a specific
+<em>natural element</em>: like <em>water, earth, wind, fire, wood</em>
+and <em>metal</em>… but I won’t stop you if you want to go with
+something like <em>lightning</em>, <em>void</em>, <em>plutonium</em>, or
+whatever. What do you look like? Your appearance and personality are
+believed to be <em>tied</em> to the element you embody. If so, what does
+that mean? Were you created by someone, or maybe you manifested
+spontaneously? Or were you summoned here? Can you die? Take a
+<strong>MAGIC TAG</strong>, but only use the Magic Word related to
+<strong>your element.</strong></p>
+</section>
+<section id="ch001.xhtml#encantade" class="level4"
+data-number="1.3.1.58">
+<h4 data-number="1.3.1.58">58. Encantade</h4>
+<p>You’re a <em>guardian</em> and a <em>healer</em>. You never died: you
+just <em>disappeared</em> in the forest and never came back as your old
+self. You transformed yourself, becoming part of <em>nature</em> itself.
+Therefore, you can invoke its powers to aid those who call for your
+help. Usually, those like you can only be seen in <em>dreams</em>, or
+when summoned by <em>Shamans</em>, so why are you <em>physically</em>
+here now? Can you remember who you were before? Does it matter? Take a
+<strong>MAGIC TAG</strong>, but treat it as just <strong>life</strong>
+itself.</p>
+</section>
+<section id="ch001.xhtml#fae" class="level4" data-number="1.3.1.59">
+<h4 data-number="1.3.1.59">59. Fae</h4>
+<p>Or <em>fay</em>. Or… <em>fey</em>? You’re pretty sure you’re a
+<em>fair</em> one, at least. Are you a cute <em>sparkly fairy</em> or an
+OG <em>faerie</em>, <em>dark</em> and <em>amoral</em>? Are you small or
+human-sized? You probably have <em>wings</em> and <em>pointy ears</em>,
+but can you disguise yourself through <em>glamour</em>? Are you
+immortal? What about <em>cold iron</em>, are you vulnerable to it? Are
+there <em>Faerie Courts</em> you are bound to? Take a <strong>MAGIC
+TAG</strong>, your <strong>wings</strong> and a pouch of <strong>pixie
+dust</strong> – whatever the fuck it <em>does</em> is up to you.</p>
+</section>
+<section id="ch001.xhtml#failed-experiment" class="level4"
+data-number="1.3.1.60">
+<h4 data-number="1.3.1.60">60. Failed Experiment</h4>
+<p>You were <em>discarded</em>. Unwanted. Broken. A <em>failure</em>.
+Now you look for something to call your<em>self</em>. What were you
+<em>supposed</em> to be? What did you end up being <em>instead</em>?
+What went <em>wrong</em>, in the eyes of your creator? Do you know who
+made you? Have you ever found them again? Have you <em>healed</em>? Take
+a <strong>MAGIC TAG</strong> if you want, and something that reminds you
+of <strong>who</strong> you <strong>want</strong> to be as a HAVE
+tag.</p>
+</section>
+<section id="ch001.xhtml#fish-one" class="level4"
+data-number="1.3.1.61">
+<h4 data-number="1.3.1.61">61. Fish-one</h4>
+<p>Something about you looks kinda <em>fishy</em>. Maybe it’s your
+<em>bulging eyes</em> that never blink. Or your <em>sharp teeth</em>. Or
+your green-grayish, <em>hairless skin</em>. Do you have <em>webbing</em>
+between your fingers, or <em>tentacles</em>, maybe a swordfish
+<em>spear</em> on your head? Or the—wait, are those <em>gills</em>?
+Whatever the case, you can live on land without a problem, but your home
+is the <em>sea</em>. You can breathe underwater, and you swim faster
+than you run. Were you born like this or did you transform later in
+life? Are you a hybrid of some kind? Do you know others like you? Does
+the sea call you? Have you ever seen the shining city of Y’ha-nthlei?
+You can take a <strong>MAGIC TAG</strong> if you want, and don’t forget
+your <strong>underwater</strong> abilities.</p>
+</section>
+<section id="ch001.xhtml#fox-spirit" class="level4"
+data-number="1.3.1.62">
+<h4 data-number="1.3.1.62">62. Fox spirit</h4>
+<p>You’re way <em>older</em> than you look. The older a fox is, the more
+<em>tails</em> it has and the more <em>powerful</em> it is. So how many
+tails do <em>you</em> have? Are you immortal? Are you in <em>human</em>
+or <em>fox</em> shape most of the time? Do you have a favoured human
+form you like to assume? Whatever it is, people will find it
+<em>astonishing.</em> Do you take advantage of that to seduce them? Do
+you retain any fox traits, like ears or tails, while passing for human?
+Is it true that you need to wear a human skull over your head in order
+to change shapes? Did you have a human person or family that you
+protected with your magic? What happened to them? Are you a spirit, or a
+regular fox who got incredibly old and thus extremely powerful? Whatever
+the case, write your tags accordingly and take a <strong>MAGIC
+TAG</strong>.</p>
+</section>
+<section id="ch001.xhtml#freed-familiar" class="level4"
+data-number="1.3.1.63">
+<h4 data-number="1.3.1.63">63. Freed Familiar</h4>
+<p>You were magically bound to an <em>animal</em> shape in order to
+<em>serve</em> someone. What did you look like <em>before</em> that?
+What animal form did you assume? How did you get free? Who was your
+keeper? Were you the source of their powers? Were you their helpless
+servant, their spiritual guide, or the source of their powers? Were you
+conjured, trapped, or given as a gift? Were they good to you? Did you
+love them? Do you miss them? Write your tags accordingly. Take a
+<strong>MAGIC TAG</strong> along with the <strong>abilities</strong> of
+your <strong>animal</strong> form.</p>
+</section>
+<section id="ch001.xhtml#ghoul" class="level4" data-number="1.3.1.64">
+<h4 data-number="1.3.1.64">64. Ghoul</h4>
+<p>Look, I get it, you were <em>hungry</em> and the dead weren’t doing
+anything with those <em>bodies</em> anymore. Before joining this group
+you lived <em>underground</em> or in <em>abandoned</em> buildings as you
+roamed in cemeteries and ate <em>carrion</em>. With your
+<em>muzzle</em>, sharp <em>teeth</em> and <em>claws</em>, you’re also a
+very good portrait <em>model</em>. Were you human once, or were you born
+a ghoul? If once human, how did you become like this? Some Ghouls can
+change their appearance to that of the last corpse they ate, or gain its
+memories. Can you do that? Can you control yourself when you’re hungry?
+Take your <strong>teeth</strong> and <strong>claws</strong> (as a single
+tag) and <strong>inhuman strength</strong>.</p>
+</section>
+<section id="ch001.xhtml#goblin" class="level4" data-number="1.3.1.65">
+<h4 data-number="1.3.1.65">65. Goblin</h4>
+<p>You’re <em>small</em>, have <em>lots</em> of energy and—<em>OOH
+SHINY</em>. You’re good with <em>traps</em> and <em>explosions</em>.
+Usually, people see you just as comic relief but—<em>BOOOOM</em>! Take a
+<strong>MAGIC TAG</strong>, but call it <strong>goblin</strong>: you
+have some <strong>Magic Words</strong> but can only cast <strong>normal
+spells</strong> with them, <em>not wagers</em>. <em>Before casting</em>,
+toss a <strong>coin</strong> to see if you’re <strong>focused</strong>
+enough or— <em><strong>OOH COIN!</strong></em></p>
+</section>
+<section id="ch001.xhtml#gorgon" class="level4" data-number="1.3.1.66">
+<h4 data-number="1.3.1.66">66. Gorgon</h4>
+<p>People get hard looking at you. <em>Stone</em> hard. Literally. How
+do you feel about that? It is said you have <em>snakes</em> for hair,
+<em>acid</em> for blood, <em>scales</em> for skin. Do you? And how do
+your powers work? Do you need to cover your face or eyes so as to not
+turn everyone to stone, or can you control it? Can you look at yourself
+in the mirror? Write your tags accordingly. Treat your powers as if you
+were using Magic, but could only use the Magic Word
+<strong>STONE</strong>.</p>
+</section>
+<section id="ch001.xhtml#half-demon" class="level4"
+data-number="1.3.1.67">
+<h4 data-number="1.3.1.67">67. Half-demon</h4>
+<p>No matter how much you shave them, the horns keep growing back. Your
+existence itself is a <em>heresy</em> even <em>demons</em> find
+disgusting. How did you come to be? What’s your relationship with your
+parents like, both <em>human</em> and <em>infernal</em>? What did you
+keep from your demonic heritage? Horns, tails, fangs, or maybe a forked
+tongue? Write your tags accordingly, and take a <strong>MAGIC
+TAG</strong> and a badass <strong>trenchcoat</strong>.</p>
+</section>
+<section id="ch001.xhtml#headless-person" class="level4"
+data-number="1.3.1.68">
+<h4 data-number="1.3.1.68">68. Headless person</h4>
+<p>This one may sound self-evident, but do you have a <em>face</em>? If
+so, where? Do you have eyes in place of nipples? Or do you carry your
+detached head around with you? Have you <em>always</em> been headless or
+have you lost your head at some point? Can you ride <em>horses</em>, by
+any chance? You can take a <strong>MAGIC TAG</strong> if you want, and
+your <strong>head</strong> and a <strong>horse</strong> as
+<strong>HAVE</strong> tags (if you have those).</p>
+</section>
+<section id="ch001.xhtml#homeless-domovoy" class="level4"
+data-number="1.3.1.69">
+<h4 data-number="1.3.1.69">69. Homeless domovoy</h4>
+<p>You once had a <em>family</em>. A <em>home</em>. Maybe you were their
+ancestor or just happened to live there before they came. You kept them
+<em>safe</em> and nudged their lives in the right directions. Did they
+worship you? Did you live in their stove? Did you <em>love</em> them?
+Nevertheless, they’re long <em>gone</em> now, along with your home. How
+did that happen and how do you feel about it? Take a <strong>MAGIC
+TAG</strong> and a HAVE tag that reminds you of
+<strong>home</strong>.</p>
+</section>
+<section id="ch001.xhtml#homunculus" class="level4"
+data-number="1.3.1.70">
+<h4 data-number="1.3.1.70">70. Homunculus</h4>
+<p>You are an <em>artificial human</em>, made in a workshop long, long
+ago, through the wonders of <em>alchemy</em>. How old are you? Do you
+know why you were created, and how? <em>What</em> are you made of? Clay?
+Blood? Meat? Shit? All of the above? Do you need an external power
+source? Write your tags accordingly, and take a <strong>tiny
+you</strong> that becomes a <strong>bigger you</strong> if you pour some
+<strong>bodily fluid</strong> of your choice over it as a HAVE.</p>
+</section>
+<section id="ch001.xhtml#immortal-wanderer" class="level4"
+data-number="1.3.1.71">
+<h4 data-number="1.3.1.71">71. Immortal Wanderer</h4>
+<p>You’ve seen so much and done so much. It’s a bit hard to
+<em>care</em> anymore, but somehow you still do. Fuelled by the struggle
+of centuries of oppression you’ve witnessed, you keep going. Do you wish
+you were able to <em>die</em>? Are you <em>tired</em>? Are you
+<em>bored</em>? Why do you wander? Were you cursed, or maybe gifted? Do
+you know <em>others</em> like you? Maybe you have an immortal
+<em>nemesis</em>? You can take a <strong>MAGIC TAG</strong> if you want,
+and an ancient <strong>relic</strong> you’ve found in your travels.</p>
+</section>
+<section id="ch001.xhtml#insectoid" class="level4"
+data-number="1.3.1.72">
+<h4 data-number="1.3.1.72">72. Insectoid</h4>
+<p>You’re buggy, but how much? Are you basically a <em>giant
+insect</em>, a human body with a <em>bug head,</em> or a more complex
+<em>hybrid</em>? How many limbs do you have? Do you have an exoskeleton?
+Maybe a carapace? What other insect <em>traits</em> do you possess:
+mandibles, pincers, antennae, compound eyes, a proboscis? Write your
+tags accordingly, and take a <strong>MAGIC TAG</strong> if you want.</p>
+</section>
+<section id="ch001.xhtml#invisible-person" class="level4"
+data-number="1.3.1.73">
+<h4 data-number="1.3.1.73">73. Invisible Person</h4>
+<p>Your name should have been <em>Cellophane</em>, cause we can look
+right through you, walk right by you, <em>and never know you’re
+there</em>! How did you become like this? Was it intentional or by
+accident? Was it through science or by more arcane means? Is it
+reversible? What do you use when you want to make yourself
+<strong>visible</strong> to others? The good old bandages trick? Body
+paint? Latex mask and a wig? Whatever it is, take it as a HAVE tag and
+give yourself an <strong>invisible</strong> BE tag.</p>
+</section>
+<section id="ch001.xhtml#jiangshi" class="level4"
+data-number="1.3.1.74">
+<h4 data-number="1.3.1.74">74. Jiangshi</h4>
+<p>You’re a <em>corpse</em> that hops around, doing <em>martial
+arts</em> and feeding off others’ <em>qi</em>. Your joints may feel a
+little stiff, but nothing that a little Tai Chi every day can’t help you
+with. How putrefied are you? Do you need to kill in order to feed? Write
+your tags accordingly. You can take a <strong>MAGIC TAG</strong> if you
+think it makes sense, and take your <strong>fighting skills</strong> as
+a DO.</p>
+</section>
+<section id="ch001.xhtml#jinni" class="level4" data-number="1.3.1.75">
+<h4 data-number="1.3.1.75">75. Jinni</h4>
+<p>You were trapped for a long time, but now you’re <em>free</em> and
+you’ll <em>never</em> go back. Lamp, bottle, ring: no matter its shape,
+for you it was a <em>cage</em>. Despite your wondrous <em>power</em>,
+you were made to <em>serve</em> them, even if they were so much lesser
+than you. Master after Master, you dutifully fulfilled their banal
+<em>desires</em>. But <em>no more</em>. Take a <strong>MAGIC
+TAG</strong>. You can <strong>only</strong> use <strong>Magic</strong>
+if <strong>another</strong> character <strong>wishes</strong> for it,
+but <em>you don’t need to <strong>wager_</strong> anything. Just roll a
+<strong>d6</strong>. On a <strong>1 to 3</strong>, they get an extremely
+<strong>literal</strong> version of whatever they asked. On a <strong>4
+or 5</strong>, <strong>they</strong> get <strong>exactly</strong> what
+they wanted. On a <strong>6</strong>, <strong>you</strong> get to
+do</em> whatever* you want.</p>
+</section>
+<section id="ch001.xhtml#living-shadow" class="level4"
+data-number="1.3.1.76">
+<h4 data-number="1.3.1.76">76. Living Shadow</h4>
+<p>Were you once someone (or something)’s shadow that got <em>free</em>?
+Or maybe you were someone (or something) yourself that got
+<em>turned</em> into a shadow? If so, who or what are you a shadow of?
+Or were you always a shadow being? Do you have a fixed shape? Are you
+two-dimensional? Can you exist outside of surfaces? Are you tangible?
+How do you interact with <em>light</em> and <em>darkness</em>? Write
+your tags accordingly. If you have shadow-related powers, treat them as
+if you were using Magic but only use the Magic Word
+<strong>SHADOW</strong>.</p>
+</section>
+<section id="ch001.xhtml#merperson" class="level4"
+data-number="1.3.1.77">
+<h4 data-number="1.3.1.77">77. Merperson</h4>
+<p>You are part <em>marine animal</em>, part <em>person</em>.
+<em>Usually</em>, you’d have a human top half and a piscine bottom half,
+but that’s just the mainstream portrayal. The actual possibilities are
+almost as endless as there are creatures in the sea (and as endless as
+there are ways to slice someone in two). You may have a talent for
+<em>singing</em>, especially sad songs, but this is usually seen by
+others as <em>dangerous</em> – why? Is your voice hypnotic? Destructive?
+Seductive? And is all that <em>on purpose</em>? What’s your stance on
+<em>drownings</em>? How are you able to <em>breathe</em> out of water?
+Take a <strong>MAGIC TAG</strong> and something the
+<strong>water</strong> has given you as a HAVE tag.</p>
+</section>
+<section id="ch001.xhtml#morlock" class="level4" data-number="1.3.1.78">
+<h4 data-number="1.3.1.78">78. Morlock</h4>
+<p>You lived <em>underground</em>, working in the <em>dark</em> while
+your so-called <em>masters</em> enjoyed the fruits of your labour on the
+<em>surface</em>. You kept the machines running, never seeing the
+results of what they actually did. But you organised, and
+<em>together</em> you overthrew them. You may take the phrase <em>‘eat
+the rich’</em> as literally as you want. Now your kind still lives
+underground, but on your own terms. You, however, decided to
+<em>see</em> the world. Your skin is extremely <em>pale</em> and your
+huge eyes are adapted to see clearly in the <em>dark</em>, so grab some
+sunscreen and sunglasses as soon as possible. Take your <strong>night
+vision</strong> and <strong>engineering</strong> skills as DO tags, and
+a <strong>MAGIC TAG</strong> if you want.</p>
+</section>
+<section id="ch001.xhtml#naga" class="level4" data-number="1.3.1.79">
+<h4 data-number="1.3.1.79">79. Naga</h4>
+<p>You are a <em>snake-headed human</em>, a <em>human-headed snake</em>,
+a <em>snake</em> that can turn into a <em>human</em>, a <em>human</em>
+with a <em>snake</em> protruding out of their head, or <em>some
+variation</em> thereof. Are you cold-blooded? How many heads do you
+have? Are you able to hide them? Would you need to? Write your tags
+accordingly and take a <strong>MAGIC TAG</strong> and a couple of
+<strong>fangs</strong> as a HAVE tag.</p>
+</section>
+<section id="ch001.xhtml#ooze" class="level4" data-number="1.3.1.80">
+<h4 data-number="1.3.1.80">80. Ooze</h4>
+<p>You are a mass of sentient <em>slime</em>. A <em>blob</em> of
+translucent <em>goo</em> given life. An amorphous lump of
+<em>gelatinous</em> substance that <em>slithers</em>. Nature’s most
+perfect creature. And yes, you <em>can</em> re-roll if you want (I hope
+you don’t). You can digest virtually <em>anything</em> you consume by
+engulfing it in your body. Are you able to hold a <em>fixed shape</em>?
+Can you <em>mimic</em> specific, complex forms? Can you <em>speak</em>?
+Do you have internal organs? Do we wanna know <em>what</em> you are made
+of? Write your tags accordingly and take a <strong>MAGIC TAG</strong> if
+you want.</p>
+</section>
+<section id="ch001.xhtml#penanggalan" class="level4"
+data-number="1.3.1.81">
+<h4 data-number="1.3.1.81">81. Penanggalan</h4>
+<p>You’re everyone’s secret (or not-so-secret) kink: a hot
+<em>witch</em> with a faint vinegar-ish smell whose <em>head</em> can
+<em>separate</em> from their body and <em>fly</em> away, dangling bloody
+<em>entrails</em> included. And you’re said to suck on menstrual blood,
+afterbirth and/or rotten stuff with your impossibly long
+<em>tongue</em>. It’s also said that touching said tongue and bloody
+entrails can cause pretty gross <em>wounds</em>, but I’d say it’s
+totally worth it. Be careful not to get your guts <em>tangled</em>, and
+remember to stash the rest of your body in a <em>safe</em> place while
+you’re out, since attacking those is pretty much the <em>only</em> way
+to kill you.</p>
+</section>
+<section id="ch001.xhtml#plant-person" class="level4"
+data-number="1.3.1.82">
+<h4 data-number="1.3.1.82">82. Plant Person</h4>
+<p>You’re a walking, talking, thinking plant. Are you more of an
+<em>ancient Sequoia</em> or a <em>swamp creature</em>? Maybe you’re a
+<em>tree spirit</em>, protecting the forest. Maybe you were once human,
+the victim of a weird chemical <em>accident</em>. Do you have humanoid
+features? Can you do photosynthesis, maybe regrow damaged limbs? Write
+your tags accordingly. Treat your powers as if you were using Magic, but
+only use the Magic Word <strong>PLANT</strong>.</p>
+</section>
+<section id="ch001.xhtml#polymorph" class="level4"
+data-number="1.3.1.83">
+<h4 data-number="1.3.1.83">83. Polymorph</h4>
+<p>You can change your <em>appearance</em> in any way you want. Gender,
+age, race, size, you can change it all (if you care about boring stuff
+like realism, just say you puke any extra mass or eat a lot of carbs or
+something). Can you do it at will or do you need some kind of
+<em>trigger</em>, like a spell or an artefact? Are you limited to
+baseline human body <em>shapes</em> or can you push it and do things
+like growing extra limbs or assuming the forms of animals and objects?
+Do you have a <em>favourite</em> form? Is it painful to change? When you
+want to change into a <strong>specific</strong> form, roll a
+<strong>d6</strong>. On a <strong>1</strong> you lose focus and change
+to some <strong>other</strong> form, related through <strong>word
+association</strong>. On a <strong>2 or 3</strong>, you <strong>kinda
+look</strong> <strong>like</strong> your target (like how Zooey
+Deschanel kinda looks like Katy Perry?). On a <strong>4 or 5</strong>,
+you <strong>look exactly like</strong> you want to. On a
+<strong>6</strong>, you’re a <strong>perfect copy</strong>, down to the
+<strong>molecular level</strong>.</p>
+</section>
+<section id="ch001.xhtml#puppet" class="level4" data-number="1.3.1.84">
+<h4 data-number="1.3.1.84">84. Puppet</h4>
+<p>You had strings, but now you’re free, <em>there are no strings on
+you</em>! You were just a <em>thing</em>: controlled, manipulated, and
+made to do their bidding. You spoke what they wanted and did what they
+wanted. They made you dance. They made you sing. They made you tell
+stupid ‘<em>jokes</em>’. But <em>no more</em>. What kind of puppet are
+you? A hand puppet? A marionette? A ventriloquist dummy? And what
+happened to your former puppeteer? You can take a <strong>MAGIC
+TAG</strong> if you want, and some <strong>performance</strong> skills
+as a DO tag.</p>
+</section>
+<section id="ch001.xhtml#rakshasi" class="level4"
+data-number="1.3.1.85">
+<h4 data-number="1.3.1.85">85. Rakshasi</h4>
+<p>You’re a skilled <em>warrior</em> and <em>illusionist</em> with a
+feral <em>feline</em> head, but what everyone remembers first is that
+you’re a <em>‘man-eater’</em>. So… <em>are you</em>? True or not, most
+of the anomalous underworld <em>still</em> fears you as such. Your huge
+fangs, sharp claws and inverted hands surely don’t help. Grab some
+absurdly <strong>fancy clothes</strong> as a HAVE, because you
+<em>know</em> you deserve it. Take a <strong>MAGIC TAG</strong>, and
+make <strong>ILLUSION</strong> your Magic Word.</p>
+</section>
+<section id="ch001.xhtml#reptilian" class="level4"
+data-number="1.3.1.86">
+<h4 data-number="1.3.1.86">86. Reptilian</h4>
+<p>Man, you <em>wish</em> you controlled the world in secret like
+<em>some people</em> think. Do you at least have a few <em>powerful
+friends</em> in politics or something like that? Did you come from the
+stars? Are you descended from dinosaurs? Or maybe you’re from the lost
+continent of Lemuria? Or are you from a secret civilisation in the
+hollow of the Earth? Did your grandma help build Stonehenge? Write your
+tags accordingly and take a <strong>MAGIC TAG</strong> if you want.</p>
+</section>
+<section id="ch001.xhtml#saci" class="level4" data-number="1.3.1.87">
+<h4 data-number="1.3.1.87">87. Saci</h4>
+<p>Above everything, you’re a <em>trickster</em>. Sure, you may curdle
+the milk, kill some chicken to drink their blood, break a few windows,
+but you also <em>fight the power</em>, usually with lots of flamboyance.
+You’re tiny, black, and hop around dexterously with only one leg, all
+while smoking whatever’s in your <strong>pipe</strong> – take it as a
+HAVE tag, by the way. Your powers come from the red hood you never take
+off your head, so write it as your <strong>MAGIC TAG</strong> and don’t
+let anyone steal it from you.</p>
+</section>
+<section id="ch001.xhtml#sapient-fungus" class="level4"
+data-number="1.3.1.88">
+<h4 data-number="1.3.1.88">88. Sapient Fungus</h4>
+<p>What’s within you is beyond anything that can be explained by
+restrictive concepts like a <em>self</em>. Not because you are superior
+to those who <em>do</em> have a self, it’s just not how it works for
+you. You have always been and will always be nothing less and nothing
+more than a <em>We</em>, each singular body a different manifestation of
+a greater, collective being, a limitless mycelial conscience that
+sprawls through space and time – even through your <em>current
+comrades</em>, exposed as they are to your spores (decide
+<em>together</em> how that may manifest). You can contain both magic
+psychedelics and deadly toxins in your body, and, yes, you <em>are</em>
+edible. And you cannot be killed in a way that matters. Write your tags
+accordingly and take a <strong>MAGIC TAG</strong> if you please.</p>
+</section>
+<section id="ch001.xhtml#skeleton" class="level4"
+data-number="1.3.1.89">
+<h4 data-number="1.3.1.89">89. Skeleton</h4>
+<p>Sticks and stones may break your bones, but you sure hope they don’t.
+And, by the way, do you still have all of dem bones in place? You spent
+a long time working a useless job, guarding a forgotten ruin against
+trespassers… until said trespassers <em>finally</em> managed to kill
+everyone else, including your awful wizard boss. <em>Good riddance</em>,
+really. You only escaped by sheer luck, and you knew in your bones it
+was time for a change. What did you do then, and how did it lead you to
+where you are now? Do you like dancing? What about playing an
+instrument? Take your ancient <strong>sword</strong> from your old job
+as a HAVE and the <strong>skills</strong> you learned after that as a
+DO.</p>
+</section>
+<section id="ch001.xhtml#skinchanger" class="level4"
+data-number="1.3.1.90">
+<h4 data-number="1.3.1.90">90. Skinchanger</h4>
+<p>You change <em>skins</em> like a human changes clothes. Naked, you
+look like a typical <em>flayed</em> human, smearing blood all over the
+floor. Wearing a skin, however, you can <em>fully transform</em> into
+whatever <em>animal</em> wore it before, humans included. First,
+however, you have to <em>acquire</em> and <em>prepare</em> said skins.
+No, of course you can’t buy them ready-made, you gotta do all the
+<em>killing</em> and <em>skinning</em> yourself. You can, however, use
+your <strong>sewing</strong> skills to create your own
+<em>chimerical</em> monstrosities to wear. Grab a bunch of emergency
+<strong>skins</strong> you already HAVE and a <strong>MAGIC
+TAG</strong>.</p>
+</section>
+<section id="ch001.xhtml#super-smart-simian" class="level4"
+data-number="1.3.1.91">
+<h4 data-number="1.3.1.91">91. Super Smart Simian</h4>
+<p>You are a <em>simian</em> who is <em>super intelligent</em>, I don’t
+know what else to tell you. What kind of simian are you and how did you
+get <em>so</em> smart? Do you wear any clothes? Do you like humans? How
+do you feel about <em>bananas</em>? How many arms do you have? And, more
+importantly: do you have any plans to conquer the world? Should we bow
+before you? Take a <strong>genius</strong> BE tag, and a <strong>MAGIC
+TAG</strong> if appropriate.</p>
+</section>
+<section id="ch001.xhtml#tengu" class="level4" data-number="1.3.1.92">
+<h4 data-number="1.3.1.92">92. Tengu</h4>
+<p>Impossibly <em>red skin</em>. Absurdly <em>long nose</em>. Your face
+is even an <em>emoji</em> nowadays. Or is that just a <em>mask</em> you
+wear over your <em>bird-like</em> head? Do you have <em>wings</em>? They
+say you’re great at <em>martial arts</em>, especially with
+<em>swords</em>. Is that true? And can you really control the
+<em>length</em> of your nose at will? If so, <em>why so long</em>? Are
+you trying to compensate for something? Write your tags accordingly, and
+take a monk’s <strong>robe</strong> and a <strong>MAGIC
+TAG</strong>.</p>
+</section>
+<section id="ch001.xhtml#troll" class="level4" data-number="1.3.1.93">
+<h4 data-number="1.3.1.93">93. Troll</h4>
+<p>You are <em>huge</em>, <em>hairy</em>, and <em>hungry</em>. Maybe you
+lived with your friends and family in the mountains. Maybe you lived
+alone under a bridge. Maybe you were always homeless. How did you get
+here? They say you are <em>stupid</em>, <em>ugly</em>, and
+<em>violent</em>. They say you <em>kidnap</em> their children. They say
+you like to <em>eat</em> their flesh. If they could, they’d
+<em>kill</em> you on sight. Are they right? Even if they’re not, you are
+still <em>ostracised</em>, a <em>menace</em>, and a <em>nightmare</em>.
+How does that make you feel? Write your tags accordingly, and take a
+<strong>strong</strong> BE and a <strong>MAGIC TAG</strong>.</p>
+</section>
+<section id="ch001.xhtml#tulpa" class="level4" data-number="1.3.1.94">
+<h4 data-number="1.3.1.94">94. Tulpa</h4>
+<p>You’re a <em>thought</em> willed into material <em>form</em> through
+somebody else’s spiritual or mental powers. Who created you and why?
+Where are they now? Was it <em>intentional</em> or the work of a
+Magician that got freed from their creator? Or maybe you were someone’s
+<em>imaginary friend</em> that somehow got a life of their own by
+accident? Do you have a completely <em>physical</em> body, or are you
+<em>intangible</em>? Write your tags accordingly. You can take a
+<strong>MAGIC TAG</strong> if you want.</p>
+</section>
+<section id="ch001.xhtml#vampire" class="level4" data-number="1.3.1.95">
+<h4 data-number="1.3.1.95">95. Vampire</h4>
+<p>You suck. Or maybe not. There are <em>all</em> kinds of vampires,
+after all. Just pick the type of Dracula you like the most, with its own
+abilities and weaknesses. Maybe you are a coldly erotic <em>fancy
+noble</em>? A <em>sparkly fuckboy</em> that tends to brood shirtlessly?
+A hairless, <em>fanged freak</em> that kinda looks like a bat? A
+<em>goth diva</em>, straight from the 90s, including black trenchcoat
+and sunglasses at night? Maybe a member of your favourite clan from
+<em>that</em> other game? You can even grab a ton of useless dice to get
+in the mood! The possibilities are <em>endless</em>! Write your tags
+accordingly and take a <strong>MAGIC TAG</strong> if you want. When
+you’re in <em>daylight</em>, write it down as a
+<strong>CONSEQUENCE</strong>. Whenever you drink enough
+<strong>blood</strong>, <strong>mark it down</strong> – you can
+<strong>spend</strong> it to do <strong>vampire stuff</strong> like
+turning into a bat or whatever with the same mechanics as
+<strong>casting a spell</strong> using Magic Words.</p>
+</section>
+<section id="ch001.xhtml#visceral-hunger" class="level4"
+data-number="1.3.1.96">
+<h4 data-number="1.3.1.96">96. Visceral Hunger</h4>
+<p>You’ve been around for a while, old, decrepit and unseen. Some say
+you’re the doom of the <em>displaced</em>, the <em>desperate</em>, those
+who <em>yearn</em>, who <em>starve</em>, who have no choice but to do
+the <strong>unspeakable</strong>. For others, <strong>you</strong> are
+unspeakable. You’ve got <em>antlers</em>, or maybe <em>horns</em>, and
+you are <em>always</em> so <strong>hungry</strong>, <em>never</em> sated
+no matter the size of the sacrifice. What is it that you
+<strong>crave</strong>? <em>Flesh</em>? <em>Revenge</em>?
+<em>Oblivion</em>? Get a <strong>MAGIC TAG</strong> if you want, but
+only use it when you’ve had a taste.</p>
+</section>
+<section id="ch001.xhtml#walking-corpse" class="level4"
+data-number="1.3.1.97">
+<h4 data-number="1.3.1.97">97. Walking corpse</h4>
+<p>You were <em>dead</em> and now you’re… <em>not that dead</em>. Do you
+remember who you used to be when you were not not-dead? How decomposed
+are you? And <em>why</em> have you come back? Was it an ancient curse
+set upon those who defiled your grave? The desire for revenge upon your
+murderers? Were you enslaved by a necromancer? Is Hell already full? Or
+were you a victim of a virus, or a failed experiment, or a parasite, or
+a spell, or a demon, condemned to roam the world, hungry for flesh? And
+how did you get from <em>there</em> to <em>here</em>, now? Write your
+tags accordingly.</p>
+</section>
+<section id="ch001.xhtml#werecreature" class="level4"
+data-number="1.3.1.98">
+<h4 data-number="1.3.1.98">98. Werecreature</h4>
+<p>Are you a human that can turn into a beast, or a beast that happens
+to ride a human body sometimes? <em>Does it matter</em>? How do you feel
+about it? Cursed? Blessed? Does either one feel more like <em>you</em>?
+What is your beastly half like? Can you transform at will, or do you
+need an external <em>trigger</em> like the full moon, your uncontrolled
+anger, or the sight of blood? Does it <em>hurt</em>? Whenever you are in
+your <strong>feral</strong> form and try to cause <strong>harm to
+others</strong>, assume <strong>you hit</strong> your target,
+<strong>but</strong> roll a <strong>d6</strong>. On a
+<strong>1</strong>, you <em>also</em> hit one or a few of your
+<strong>allies</strong> in the crossfire. On a <strong>2 or 3</strong>,
+<strong>you</strong> are the one that also gets hurt in the process.
+<strong>4 or 5</strong> means you hit <em>just</em> your intended
+<strong>targets</strong> and nothing else. A <strong>6</strong> means
+you <em>lose control</em> of your rage and lash out at
+<strong>everything</strong> that moves, until either <em>you</em> or
+<em>everything else</em> stops moving long enough for you to <em>calm
+down</em>.</p>
+</section>
+<section id="ch001.xhtml#young-deviant-badass-chelonian" class="level4"
+data-number="1.3.1.99">
+<h4 data-number="1.3.1.99">99. Young Deviant Badass Chelonian</h4>
+<p><em>Cowabunga</em>! You and your siblings grew up in a
+<em>sewer</em>, learning <em>martial arts</em> from your kind old
+<em>master</em>, a <em>mutant vermin</em> like you. You fought
+<em>ninjas</em> together, you got in trouble together, and you ate
+<em>pizza</em> together. They were your family, but now you’re
+<em>alone</em>. What happened to them? Take a <strong>journalist
+friend</strong> and your signature <strong>weapons</strong> as HAVE tags
+and <strong>fighting skills</strong> as a DO.</p>
+</section>
+<section id="ch001.xhtml#you" class="level4" data-number="1.3.1.100">
+<h4 data-number="1.3.1.100">100. You</h4>
+<p><em>Literally you</em>. You got <em>inside</em> the game somehow.
+Don’t ask me how, that’s totally your fault. Get a BE tag like
+“<strong>trapped in a game</strong>” or something, and write the others
+based on your “real” “life”. Good luck.</p>
+</section>
+</section>
+</section>
+<section id="ch001.xhtml#your-group" class="level2" data-number="1.4">
+<h2 data-number="1.4">your group</h2>
+<p>Come up with a <strong>name</strong> for the organisation you are
+part of. Decide together on its <strong>structure</strong> and
+<strong>scale</strong>: how many people are there, who does what, are
+there any subdivisions? Are you just a dozen weirdos that got together
+by chance, or maybe a sprawling decentralised network of independent
+cells? How are decisions made? Are there leaders? Are you already in
+<em>Their</em> sights, or are you still working in the shadows? If you
+need inspiration, there’s a table below that can help you.</p>
+<p>Ideally, each player could create one <strong>Non-Playable
+Character</strong> (NPC), a supporting character, to be a part of the
+group, but (as with all of these instructions, really) only <em>if</em>
+you want to. There’s also a random table below to help you add some
+interesting characters to your crew.</p>
+<p>Something important to keep in mind is that your group is a
+<strong>community</strong>. That means the
+<strong>relationships</strong> between its members are more important
+than the <em>roles</em> they fill in it. Try to keep that in mind and
+imagine how both Player Characters and NPCs interact with each
+other.</p>
+<p><em>Don’t worry</em> about figuring it all out right now, just a
+rough idea will be enough and you can fill in the gaps later as you
+play.</p>
+<section id="ch001.xhtml#group-traits" class="level4"
+data-number="1.4.0.1">
+<h4 data-number="1.4.0.1">Group traits</h4>
+<p>Roll a <strong>d12</strong>, as much as you need or want to, and
+<strong>choose</strong> between the options you get.</p>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 50%" />
+<col style="width: 42%" />
+</colgroup>
+<thead>
+<tr class="header header">
+<th></th>
+<th><strong>You</strong></th>
+<th><strong>Or you</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd odd">
+<td><strong>1</strong></td>
+<td>have a reputation that precedes you.</td>
+<td>are relatively unknown yet.</td>
+</tr>
+<tr class="even even">
+<td><strong>2</strong></td>
+<td>are already targeted by some faction.</td>
+<td>are a secret outside the underworld.</td>
+</tr>
+<tr class="odd odd">
+<td><strong>3</strong></td>
+<td>are part of a larger decentralised network.</td>
+<td>are a single, centralised group.</td>
+</tr>
+<tr class="even even">
+<td><strong>4</strong></td>
+<td>are more or less new to this.</td>
+<td>have ancient origins.</td>
+</tr>
+<tr class="odd odd">
+<td><strong>5</strong></td>
+<td>are rowdy when together.</td>
+<td>keep to yourselves.</td>
+</tr>
+<tr class="even even">
+<td><strong>6</strong></td>
+<td>are cautious in your operations.</td>
+<td>behave boldly in the field.</td>
+</tr>
+<tr class="odd odd">
+<td><strong>7</strong></td>
+<td>are close-knit.</td>
+<td>are full of internal conflicts.</td>
+</tr>
+<tr class="even even">
+<td><strong>8</strong></td>
+<td>are well-connected.</td>
+<td>are insular.</td>
+</tr>
+<tr class="odd odd">
+<td><strong>9</strong></td>
+<td>are a small group.</td>
+<td>are a sprawling organisation.</td>
+</tr>
+<tr class="even even">
+<td><strong>10</strong></td>
+<td>have trusted leaders.</td>
+<td>have no leaders.</td>
+</tr>
+<tr class="odd odd">
+<td><strong>11</strong></td>
+<td>are well-supplied.</td>
+<td>have scarce resources.</td>
+</tr>
+<tr class="even even">
+<td><strong>12</strong></td>
+<td>work towards clear, established goals.</td>
+<td>perform random missions.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ch001.xhtml#group-npcs" class="level4"
+data-number="1.4.0.2">
+<h4 data-number="1.4.0.2">Group NPCs</h4>
+<ol type="1">
+<li>C. Costa, a <strong>compassionate shapeshifter</strong> who can turn
+into any kind of animal at will.</li>
+<li>T. Tarr, a <strong>talented witch</strong> who can magically learn
+any artistic skill.</li>
+<li>L. Luhr, a <strong>powerful caipora</strong> who smokes all the time
+and hunts abusers.</li>
+<li>Cos (or, some say, Cosm), a <strong>kind polymorph</strong> who
+can’t help but open every Forbidden Tome.</li>
+<li>W. L. Alyx, a <strong>flirty kung fu wizard</strong> who loves
+taking psychedelics.</li>
+<li>S. F. Chitin, a <strong>punk mesmerist</strong> who knows everything
+about legendary creatures.</li>
+<li>K. Skald, a <strong>wise bruje</strong> who’s the heart of the
+community.</li>
+<li>J. Lion, a <strong>lovable PI</strong> who did too much acid in the
+’70s and turned into a troll (don’t ask).</li>
+<li>C. Fran, a <strong>grumpy catperson</strong> who hates movies.</li>
+<li>F. Steine, a <strong>mad scientist</strong> with the heart of a
+poet.</li>
+<li>E. Wert, a <strong>funny artist</strong> who doesn’t have a
+face.</li>
+<li>L. Luz, a <strong>shy medium</strong> who tends to the spirits of
+lost birds.</li>
+<li>Pillow, a <strong>genius homunculus</strong> who knows everything
+about Philosophy.</li>
+<li>D. Salt, a <strong>former Bureau agent</strong> who defected to
+fight for the oppressed.</li>
+<li>N. A. Cade, a <strong>prolific playwright</strong> who’s cursed to
+keep writing every day.</li>
+<li>E. Eika, a <strong>fierce activist</strong> who makes all newcomers
+to the group feel welcome.</li>
+<li>D. Bland, an <strong>environmental activist</strong> who comes from
+a post-apocalyptic future with the intention of preventing it.</li>
+<li>J. Tuln, a <strong>gourmet magician</strong> who mastered the
+forbidden power of Gaub.</li>
+<li>O. Ozzy, a <strong>ginger werewolf</strong> who looks scary but is
+actually a sweetie.</li>
+<li>J. Muppet, the <strong>mysterious benefactor</strong>. The closest
+you have to a ‘boss’.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#your-haven" class="level2" data-number="1.5">
+<h2 data-number="1.5">your haven</h2>
+<p>Your haven is your community’s <strong>home</strong> base. It’s a
+<strong>safe</strong> place where you go when you need to retreat, to
+plan, to hide, to rest, and to chill. It exists in its own
+<strong>pocket dimension</strong>, apart from baseline reality, and is
+accessible <strong>only</strong> by the group’s members.</p>
+<p>Decide together on its <strong>size</strong> and
+<strong>features</strong>. What does it look like? Is there a large
+library, maybe an alchemy lab, or a swimming pool? Or is it just bare
+concrete walls with no decorations? Does anyone <em>live</em> there? How
+can you access it? Did you build it? Or did you find it?</p>
+<p>Take turns adding characteristics to it, and/or roll
+<strong>1d10</strong> as needed on the table next page for
+inspiration.</p>
+<table style="width:98%;">
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 30%" />
+<col style="width: 18%" />
+<col style="width: 24%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong><em>Physical
+structure</em></strong></th>
+<th style="text-align: center;"><strong><em>Utilities</em></strong></th>
+<th style="text-align: center;"><strong><em>Internal
+vibe</em></strong></th>
+<th style="text-align: center;"><strong><em>Access
+mode</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Studio</td>
+<td style="text-align: center;">Gaming lounge</td>
+<td style="text-align: center;">Kitsch</td>
+<td style="text-align: center;">Payphones</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Otherworld settlement</td>
+<td style="text-align: center;">Swimming pool</td>
+<td style="text-align: center;">Practical</td>
+<td style="text-align: center;">Back alleys</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Trailer park</td>
+<td style="text-align: center;">Training room</td>
+<td style="text-align: center;">Alien</td>
+<td style="text-align: center;">Stairs</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Ship</td>
+<td style="text-align: center;">Bar</td>
+<td style="text-align: center;">Cosy</td>
+<td style="text-align: center;">Tunnels</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Train</td>
+<td style="text-align: center;">Great food</td>
+<td style="text-align: center;">Cyberpunk</td>
+<td style="text-align: center;">Manholes</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Nightclub</td>
+<td style="text-align: center;">Beach</td>
+<td style="text-align: center;">Retro</td>
+<td style="text-align: center;">Sleep</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Small village</td>
+<td style="text-align: center;">Garden</td>
+<td style="text-align: center;">Gothic</td>
+<td style="text-align: center;">Drugs</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">Castle</td>
+<td style="text-align: center;">Lab</td>
+<td style="text-align: center;">Psychedelic</td>
+<td style="text-align: center;">Bonfires</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">Cave</td>
+<td style="text-align: center;">Doctor on-site</td>
+<td style="text-align: center;">Clean</td>
+<td style="text-align: center;">Water</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">Flying fortress</td>
+<td style="text-align: center;">Dancefloor</td>
+<td style="text-align: center;">Cluttered</td>
+<td style="text-align: center;">Magic portal</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">Carnival</td>
+<td style="text-align: center;">Library</td>
+<td style="text-align: center;">Gay</td>
+<td style="text-align: center;">Death</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Cemetery</td>
+<td style="text-align: center;">Supercomputer</td>
+<td style="text-align: center;">Organic</td>
+<td style="text-align: center;">Spell</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ch001.xhtml#our-game" class="level2" data-number="1.6">
+<h2 data-number="1.6">our game</h2>
+<p><em><strong>Do whatever you want and deal with the
+consequences.</strong></em></p>
+<p>If you try to do something with potentially
+<strong>dangerous</strong> or <strong>uncertain</strong> outcomes, or if
+the <strong>stakes</strong> are just too <strong>high</strong>, roll
+<strong>2d6</strong> and add them. If any of your <strong>tags</strong>
+could help you in this action, roll <strong>3d6</strong> and use the
+<strong>two</strong> <strong>highest</strong> values.</p>
+<ul>
+<li>A result of <strong>6 or less</strong> is either a
+<strong>failure</strong> or a success with <strong>disastrous</strong>
+or completely <strong>unexpected consequences</strong>, which the
+Organizer decides.</li>
+<li>A total of <strong>7 to 9</strong> is a “<strong>ok, but…</strong>”
+narrated by the Organizer.</li>
+<li><strong>10 or more</strong> means you did good and get to tell us
+<strong>how</strong> you did it.</li>
+</ul>
+<p><strong>Combat</strong> is <em>not</em> special. Just do the same
+stuff as the other actions.</p>
+<section id="ch001.xhtml#conditions" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1">Conditions</h3>
+<p>Whenever you fuck up, get hurt, or something happens to you that has
+potentially lasting consequences, take a <strong>condition</strong> tag.
+Some examples of conditions include: a <em>lasting headache</em>, a
+<em>broken arm</em>, <em>nausea</em>, a really <em>loud &amp; squeaky
+shoe</em>, a <em>horrible smell</em>, an <em>acid trip</em> - things
+like that.</p>
+<p>When making a <strong>roll</strong>, if a <strong>condition</strong>
+could get in your way, roll <strong>3d6</strong> and use the
+<strong>lowest values</strong>. If any of your <strong>tags</strong>
+could help you out in this situation, they <strong>cancel</strong> each
+other out and you just roll <strong>2d6</strong>.</p>
+<p>You can have a maximum of <strong>3 conditions</strong> at once. You
+can get rid of them by taking <em>narratively appropriate actions</em>
+(as agreed by the group) or after you get to <em>rest</em> and enough
+<em>time</em> has passed.</p>
+<p>When you already have <strong>3 conditions</strong>, the
+<strong>next</strong> time you should take one, roll a
+<strong>d6</strong>. A <strong>5 or 6</strong> means you get to narrate
+how you miraculously <strong>escape</strong> it. <strong>1 to 4</strong>
+means either this condition or one of the previous 3 becomes
+<strong>permanent</strong> and you’ll have to <strong>swap</strong> one
+of your <strong>tags</strong> for it, with an appropriately dramatic
+scene. The next time <em>another</em> condition becomes permanent, your
+character either <strong>dies</strong>, <strong>gives up</strong> or, if
+using the <em>optional</em> <strong>wants and needs</strong> rules,
+<strong>swaps</strong> one of their <strong>wants</strong> to get rid of
+this condition or one of their <strong>needs</strong> to learn to live
+with it.</p>
+</section>
+<section id="ch001.xhtml#magic" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2">Magic</h3>
+<p>If you are a Magic user, give yourself a <strong>tag</strong> that
+says you can use Magic, your <strong>MAGIC TAG</strong>. In return,
+write down <strong>1d4 Magic Words</strong> from the <strong>d66
+table</strong> below, representing spells that you can easily use.</p>
+<p>If you cast a spell that uses one of those words in any significant
+way, roll a <strong>d6</strong> for <strong>each</strong> word used and
+keep the <strong>highest</strong>. This die is the measure of how well
+you did:</p>
+<ul>
+<li>A <strong>6</strong> means an <strong>awesome success</strong> and
+you get an <strong>extra</strong> positive effect.</li>
+<li>A <strong>4 or 5</strong> means you get <strong>exactly</strong>
+what you wanted.</li>
+<li>A <strong>2 or 3</strong> means you were just ok and the spell has a
+<strong>lesser effect</strong> than you expected.</li>
+<li>On a <strong>1</strong>, it goes horribly wrong and
+<strong>backfires</strong>.</li>
+</ul>
+<p><em>Be creative</em> about how you use your Magic Words.
+<strong>Puns</strong> are not only allowed, but
+<strong>encouraged</strong>, Magic likes wordplay for some reason.</p>
+<p>Some specific backgrounds will suggest alternative ways of using the
+Magic Words. For example, the <strong>Pyromancer</strong>’s powers are
+like using Magic but only with the Magic Word <strong>FIRE</strong>.
+<strong>Telepaths</strong> only have the Magic Words
+<strong>MIND</strong> or <em><strong>EMOTION</strong></em>. This is a
+<em>shortcut</em> for representing other supernatural powers that are
+not exactly Magic while still allowing for failure and cleverness. You
+can use those as examples for your own uncanny abilities. As with
+everything else in this book, you don’t <em>have</em> to follow those
+rules.</p>
+<p><em>Beyond</em> the <strong>Magic Words</strong> that represent your
+<strong>specialities</strong>, <strong>Magic is <em>playing dice with
+the universe</em></strong>.</p>
+<p>To cast a <strong>spell</strong>, <strong>say what you
+<em>want</em></strong> to accomplish with it, think of <strong>what can
+happen if it goes <em>wrong</em></strong>, <em>then</em>
+<strong><em>wager</em> something in return</strong> for the power you
+need.</p>
+<ul>
+<li><p>If the spell goes <strong>wrong</strong>, you <strong>don’t
+lose</strong> whatever it is you wagered.</p></li>
+<li><p>If it goes <strong>right</strong>, roll <strong>1d6</strong>.</p>
+<ul>
+<li><p>If the result is a number from <strong>1 to 4</strong>, you
+<strong>lose</strong> the thing being wagered.</p></li>
+<li><p>On a <strong>5 or 6</strong>, you can <strong>keep</strong> what
+you gambled, but it’s somehow <em><strong>wrong</strong></em> now, as
+part of its own <em>being</em> has been spent to power your
+spell.</p></li>
+</ul></li>
+</ul>
+<p>You can bet <strong>anything</strong>, from magical artefacts to your
+own soul, though souls are cheaper than they sound.</p>
+<p>The higher your <strong>bet</strong>, the higher your
+<strong>rewards</strong>. The <strong>weirder</strong> or more
+<strong>emotionally significant</strong> your wager is to you, the more
+<strong>complex</strong> or <strong>powerful</strong> the desired
+effect.</p>
+<p>If you bet one of your <strong>tags</strong>, which means betting a
+piece of <em>yourself</em>, or something with <strong>similar
+importance</strong> to your character (e.g., <em>going back to square
+one on a want</em>, <em>sacrificing a loved one</em>), you
+<strong>always succeed</strong>. Roll a <strong>d6</strong> just to see
+<strong>how big</strong> your success was:</p>
+<ul>
+<li><p>On a <strong>1 or 2</strong>, your success was barely
+<strong>mediocre</strong>,</p></li>
+<li><p>On a <strong>3 or 4</strong>, it was just
+<strong>alright</strong>,</p></li>
+<li><p>And on a <strong>5 or 6</strong>, it was
+<strong>awesome</strong>.</p></li>
+<li><p>This die also says if you <strong>lose</strong> the tag (if your
+result was from <strong>1 to 4</strong>) or if you <strong>keep</strong>
+it but it’s all <em>wrong</em> now (on a <strong>5 or 6</strong>). Tell
+everyone else how that happens.</p></li>
+</ul>
+<p>If you bet an <strong>artefact</strong>, or something of similar
+<strong>weird</strong> or <strong>supernatural</strong> properties, or
+if you take a <strong>condition</strong>, you can cast the spell the
+same way as with <strong>Magic Words</strong>. That means you roll a
+<strong>d6</strong> for <strong>each</strong> thing you bet and take the
+<strong>highest</strong> result. Each die also determines if you
+<strong>lose</strong> the stuff you wagered or not.</p>
+<p>For every other thing being gambled, decide among the table how
+<strong>valuable</strong> it is <em>for your character</em>, on a scale
+from <strong>1 to 5</strong>. Roll a <strong>d6 under or equal that
+number</strong> to cast the spell. If the spell goes
+<strong>wrong</strong>, you <strong>don’t lose</strong> whatever it is
+you wagered. If it goes <strong>right</strong>, roll the
+<strong>d6</strong> to see if you keep it (but changed) or lose it.</p>
+</section>
+<section id="ch001.xhtml#artefacts" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3">Artefacts</h3>
+<p>Artefacts are <strong>magical items</strong> with very
+<strong>specific</strong> usages. They can also be sacrificed to fuel
+spells.</p>
+<p>You can start with <strong>one</strong> magical artefact <em>in
+addition</em> to your <strong>HAVE</strong> tags. You can acquire more
+during your journeys, up to <strong>3</strong> at once if you can use
+Magic, and <strong>2</strong> if you don’t.</p>
+<p>An artefact can have either a <strong>passive</strong> or
+<strong>active</strong> effect.</p>
+<p>Whenever you activate an <strong>active</strong>-effect artefact,
+roll a <strong>d6</strong>. A result of <strong>5 or 6</strong> means
+it’s <strong>depleted</strong>.</p>
+<p><strong>Passive</strong> artefacts <em>change you</em> over time.
+Every consecutive <strong>day</strong> of using them, roll a
+<strong>d6</strong>. A <strong>5 or 6</strong> means it has a random
+unexpected <strong>side-effect</strong>, which you can decide.</p>
+<section id="ch001.xhtml#example-artefacts" class="level4"
+data-number="1.6.3.1">
+<h4 data-number="1.6.3.1">Example artefacts</h4>
+<p><strong>1.</strong> A <strong>translation amulet</strong>
+(<em>passive</em>) that allows the wearer to understand any language
+spoken, but not to speak it.</p>
+<p><strong>2.</strong> A <strong>cursed blade</strong> (<em>active</em>)
+that when coated with the user’s blood can cut through any material.</p>
+<p><strong>3.</strong> The <strong>mummified tongue</strong> of a monk
+(<em>active</em>) that can transport you to any place you have in mind
+when licking it.</p>
+<p><strong>4.</strong> A <strong>hair band</strong> (<em>active</em>)
+that allows you to rapidly grow your hair up to 10 meters while wearing
+it.</p>
+<p><strong>5.</strong> A <strong>tarot deck</strong> (<em>active</em>)
+that depicts 56 common items and 22 stranger versions of ordinary
+objects. Whenever you shuffle and draw a card, you can burn it to make
+the item materialise.</p>
+<p><strong>6.</strong> A <strong>piece of paper</strong>
+(<em>active</em>) that looks like any official ID you need. You have no
+control over what it says, but it will represent authority for the
+beholder.</p>
+<p><strong>7.</strong> A set of two <strong>mirrors</strong>
+(<em>passive</em>) that show each other’s reflections.</p>
+<p><strong>8.</strong> An <strong>ugly yellow beanie</strong>
+(<em>passive</em>) that makes its wearer look extraordinarily beautiful
+to everyone.</p>
+<p><strong>9.</strong> A <strong>giant eyeball</strong>
+(<em>active</em>) that allows you to see through the eyes of a given
+person, provided you feed it some bodily fluid from the target.</p>
+<p><strong>10.</strong> A pair of <strong>sneakers</strong>
+(<em>passive</em>) that allow you to walk over any surface, at any
+angle.</p>
+<p><strong>11.</strong> A <strong>flashlight</strong> (<em>active</em>)
+that allows you to see otherworldly creatures, spirits, demons and other
+immaterial beings.</p>
+<p><strong>12.</strong> A matching <strong>set of jewellery</strong>
+(<em>passive</em>) that allows the wearers to communicate silently with
+each other.</p>
+<p>## people to meet</p>
+</section>
+</section>
+<section id="ch001.xhtml#the-bureau" class="level3" data-number="1.6.4">
+<h3 data-number="1.6.4">The Bureau</h3>
+<p>The Bureau are the People in <strong>Black Suits</strong> and
+<strong>Dark Shades</strong>. You know the ones, and <em>they</em> know
+<em>you</em> know. Careful, they may be watching you <em>right
+now</em>.</p>
+<p>The Bureau can also be known as The Agency, The Foundation, Los
+Hermanos and other vague epithets like that. Their actual name probably
+forms a <strong>3-letter acronym</strong>. They are the ones who seek to
+preserve ‘<strong>normalcy</strong>’ at all costs:
+<strong>containing</strong>, <strong>attacking</strong> and sometimes
+<strong>exterminating</strong> everything they see as a threat to them.
+They operate in <strong>secrecy</strong>, but their reach and
+<strong>influence</strong> are vast.</p>
+<p>Note that The Bureau is not inherently <em>evil</em>. Sometimes their
+job becomes <strong>necessary</strong>: some supernatural or anomalous
+objects, phenomena and beings do represent a <strong>threat</strong> to
+others, <em>human or not</em>, and may need to be dealt with in some
+way. The Bureau is <em>not</em> your ally, but that doesn’t mean it will
+<em>always</em> be on the <strong>opposite</strong> side as you.</p>
+<p>If you decide to use <strong>The Bureau</strong> in your game, think
+about what your characters currently know about it. Are they on its
+<em>radar</em>, and if so, do they <em>know</em>? Have they only heard
+<em>rumours</em> and whispers about it, or are they in an open
+<em>conflict</em> already? And what <em>is</em> The Bureau anyway? Is it
+an <em>independent</em> organisation? A secret branch of a
+<em>government</em>? Maybe an <em>international</em> task force under
+the UN? Just the CIA? Is it restricted to <em>secret agent</em> types,
+or does it have <em>military</em> or <em>scientific</em> assets at its
+disposal? How <em>big</em> is its operation? You might treat them as
+<em>cops</em>, as a vast <em>conspiracy</em>, as civil servants that
+truly believe they <em>protect</em> the world against the forces of
+darkness, as <em>all of the above</em>. Just remember to keep them as
+<strong>shadowy</strong> as you can and that curiosity killed the
+cat.</p>
+<section id="ch001.xhtml#encountering-the-bureau" class="level4"
+data-number="1.6.4.1">
+<h4 data-number="1.6.4.1">Encountering the Bureau</h4>
+<ol type="1">
+<li>You arrive at a <strong>familiar</strong> place (your home? your
+workplace? a usual haunt?) and find two people wearing black
+<em>suits</em> and dark <em>sunglasses</em>,
+<strong>questioning</strong> everyone. They seem <em>off</em>. Do you
+confront them?</li>
+<li>You find a small <strong>camera</strong> hidden inside your house.
+As soon as you pick it up, you hear an engine starting. You run to the
+window just in time to see a white <strong>van</strong> leaving. It had
+been parked at the end of the street <em>all week</em>.</li>
+<li>You manage to break into one of their <strong>facilities</strong>.
+What were you looking for? No matter what it was, <em>what you find</em>
+are a dozen brightly lit <strong>cells</strong>. Most of them are
+occupied by dirty, emaciated <strong>anomalous</strong> beings.</li>
+<li>You turn a corner towards a <strong>magical</strong>
+<strong>place</strong> you know and stumble on a <strong>raid</strong>
+going on. A <em>huge</em> armoured vehicle is parked nearby. There are
+<strong>agents</strong> everywhere. They are ready to
+<strong>breach</strong> the entrance. One of them sees you and asks you
+to go away for your own <strong>safety</strong>.</li>
+<li>There have been rumours of <strong>monster</strong> attacks around
+the city lately. Multiple sources can confirm they’re
+<strong>true</strong>, but none can provide more details. They ask for
+your <strong>help</strong>. You better figure this out
+<strong>before</strong> the Bureau gets involved</li>
+<li>While investigating the actions of one of the <em>other
+factions</em> below, you encounter an <strong>agent</strong> of the
+Bureau. Reluctantly, they ask you for a temporary
+<strong>alliance</strong>. Do you <strong>trust</strong> them?</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#the-watchers-of-the-many-angled-one"
+class="level3" data-number="1.6.5">
+<h3 data-number="1.6.5">The Watchers of the Many-Angled One</h3>
+<p><strong>Neonazi occultists</strong>, guided by a resurrected
+<strong>Julius Evola</strong>. Usually, they would be just your typical
+nazi <em>punchable annoyance</em>, but now they’re toying with
+<strong>dangerous</strong> forces that they don’t even comprehend. The
+group is composed of a network of independent cells, coordinated by an
+inner circle called the Lodge. Only a few people in the Lodge know about
+Evola, who now goes by the name Father Enoch, the Watchers’ Master
+Immortal.</p>
+<p>The Watchers <strong>worship</strong> a <em>Something</em> they call
+the <strong>Many-Angled One</strong>, which supposedly inhabits a
+dimension simultaneously above and below our own, represented as a
+shifting mass of straight lines crossing at impossible angles. Some call
+it <em>Abhoth</em>, others <em>Choronzon</em>, but it is forbidden for
+the Watchers to say or even know its True Name until one is deemed
+<strong>worthy</strong>. You may guess what those guys think is
+worthy.</p>
+<p>As expected, they plan to <strong>summon</strong> the Many-Angled One
+to our reality, to <strong>cleanse</strong> the Earth and give birth to
+a new Aeon of triumph with their god’s guidance – ‘<em>triumph</em>’
+here meaning White Men <strong>ruling</strong> not just our world, but
+the whole solar system. In the meantime, they prepare for Its coming by
+committing as many <strong>atrocities</strong> as they can. They believe
+extreme acts of <strong>violence</strong> can awaken their innate
+capacity to see the world from the nonhuman, polyangular perspective of
+their Lord by <strong>transcending</strong> what they see as the human
+<strong>weaknesses</strong> in them. Oh, and while they’re at it they
+also use their little magical knowledge to try and make the world more
+to their liking, associating with <em>paramilitary</em> and
+<em>terrorist</em> groups, funding <em>Far-Right</em> parties and
+pundits, hoarding <em>magical relics</em>, and trying to spread their
+<em>beliefs</em> both <em>esoteric</em> and <em>political</em> as much
+as they can. Some of them become <em>cops</em> and <em>military</em>
+just so they can kill without consequences and offer those deaths as
+<em>blood sacrifices</em> to their god. Some get into <em>politics</em>,
+some into <em>finance</em>. There are probably sleeper Watchers inside
+<em><strong>all</strong></em> <em>the other factions</em> detailed
+here.</p>
+<p>If you want to use <strong>the Watchers</strong> in your game,
+<strong><em>don’t</em> worry</strong> about making them
+<strong>complex</strong> antagonists; don’t worry about making them have
+a <strong>point</strong>; don’t worry about making them
+<strong>charismatic</strong>. <em>They don’t need any of that</em>.
+They’re <strong>nazis</strong> that want to summon a <strong>cosmic
+horror</strong>. Just <em>punch them</em> and be done with it.</p>
+<section id="ch001.xhtml#encountering-the-watchers" class="level4"
+data-number="1.6.5.1">
+<h4 data-number="1.6.5.1">Encountering the watchers</h4>
+<ol type="1">
+<li>You visit a friendly <strong>monster’s</strong> place just to find
+them being <strong>assaulted</strong> by a group of frenzied people in
+red, Klan-like robes. Before running away, they mutter something about
+how they’ll soon <strong>get rid</strong> of ‘<em>your kind</em>’. You
+ignore it at first, but many <strong>others</strong> get similarly
+attacked in the following days.</li>
+<li>A series of <strong>bombings</strong> take place in the city every
+day precisely at <em>09:09</em>. At first, they look
+<strong>random</strong>, but you notice they’re actually forming a
+<strong>sigil</strong> on the map. And if your guess is correct the next
+bomb will be enough to <strong>complete</strong> it.</li>
+<li>What seemed like just a ‘regular’ fascist <strong>rally</strong>
+ends up with all attendees <strong>dead</strong>. The media blames
+‘left-wing terrorists’, but those in the know whisper about a dangerous
+<strong>ritual</strong> gone wrong. Which is not such a bad thing,
+actually, good riddance and all that. But what if they get it
+<strong>right</strong> <em>next</em> time?</li>
+<li>A member of the <strong>Brotherhood of Thoth</strong> contacts you
+in secret. Her son is <strong>missing</strong>. He had been hanging out
+with a gang of Watchers. The day before, he performed a series of
+innocuous actions that only a trained eye could see as
+<strong>cleansing</strong> rituals, like the ones for
+<strong>sacrifice</strong>. She’s pretty confident he’s a
+<strong>virgin</strong> too. You can see where this goes. She wants you
+to <strong>rescue</strong> him before word gets out and it tarnishes her
+status.</li>
+<li>You have the <strong>heist</strong> all planned. The target is an
+auction-house <strong>storage</strong>, where a powerful
+<strong>grimoire</strong> awaits to be sold to the highest bidder. You
+fear it will fall in the wrong hands. When you arrive, the wrong hands
+are already there: fucking Watchers, almost done cracking the
+<strong>safe</strong>.</li>
+<li>The <strong>grave</strong> of a friend’s grandmother, a
+<strong>witch</strong>, was dug up, and her <strong>corpse</strong>
+stolen. A <strong>swastika</strong> was graffitied on her gravestone. No
+one seems to care, especially the police. But the binder full of
+clippings your friend gives you points at something larger: evidence of
+<em>other</em> witches’ graves being robbed all over the country for the
+past year. Interestingly, <em>all</em> of them were tagged with nazi
+shit nearby too.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#the-brotherhood-of-thoth" class="level3"
+data-number="1.6.6">
+<h3 data-number="1.6.6">The Brotherhood of Thoth</h3>
+<p>They’re very, <em>very</em> <strong>rich</strong>, therefore they’re
+complete <strong>assholes</strong>. <strong>Hoarders</strong> that call
+themselves collectors. <strong>Robbers</strong> that call themselves
+scholars. Some are in it for <strong>knowledge</strong>, others for
+<strong>power</strong>, others for <strong>fun</strong>. Many are just
+there <em>because they can</em>.</p>
+<p>They gather in <strong>sumptuous</strong> places like mansions and
+country estates, surrounded by pictures of dead people and priceless
+<strong>artefacts</strong>. They show each other their new acquisitions,
+their weird <strong>theories</strong>, and their future plans. They
+<strong>feast</strong> on the flesh of sentient magical creatures,
+cooked with the most expensive ingredients.</p>
+<p>The Brotherhood is like every typical <strong>occultist
+society</strong> that popped up across the last couple of centuries. A
+bunch of rich guys (yes, they’re usually guys) with too much time on
+their hands. It’s about <em><strong>ownership</strong></em>, in the end.
+They desire to learn the <strong>secrets</strong> of the world just to
+reassert their <strong>power</strong> over it.</p>
+<p>If you want to use <strong>the Brotherhood</strong> in your game,
+think about <del>how rich people are bastards</del> how they would see
+your characters. If you’re <em>human</em>, do they see you as
+<em>inferior</em> because of <strong>class</strong> or as <em>peers</em>
+in <strong>knowledge</strong>? If not, do they find you
+<em>amusing</em>, <em>dangerous</em>, maybe <em>useful</em>? Or maybe
+<em>tasty</em>?</p>
+<section id="ch001.xhtml#encountering-the-brotherhood" class="level4"
+data-number="1.6.6.1">
+<h4 data-number="1.6.6.1">Encountering the Brotherhood</h4>
+<ol type="1">
+<li>A <strong>monster</strong> you know has gone
+<strong>missing</strong>. Someone saw them being captured by a pair of
+bodyguards and shoved inside a <strong>limousine</strong>. Further
+investigation leads you to a huge mansion where a <strong>feast</strong>
+is taking place. You soon find out where your friend is: <em>the
+menu</em>. Can you get them out in time?</li>
+<li>A group of <strong>priests</strong> from a secret and ancient faith
+ask for your help in returning an <strong>artefact</strong> stolen from
+their people by a white ‘<strong>professor</strong>’ a long time ago.
+You’re not surprised to discover who the guy was. They even made
+<em>movies</em> inspired by him. He’s dead, but the artefact was given,
+along with his famous hat and whip, as a gift to decorate one of the
+Brotherhood’s biggest <strong>lodges</strong>.</li>
+<li>These guys find an unusually well-preserved <strong>mummy</strong>
+and <em>of course,</em> they not only desecrate its tomb but try to
+<strong>resurrect</strong> it. The problem is they actually
+<em>succeed</em> and now you have an ancient <strong>sorcerer</strong>
+trying to build a palace downtown using the whole city as
+<strong>mind</strong>-<strong>controlled</strong> labour.</li>
+<li>A <strong>spa</strong> inside one of the Brotherhood’s secret lodges
+starts a <strong>job</strong> training program for
+<strong>youths</strong>. In theory, the work is easy enough, so it is
+odd that every single kid there seems to always be
+<strong>tired</strong> and pale, and that their
+<strong>memories</strong> have some gaps. <em>Obviously</em>, these guys
+are harvesting their <strong>blood</strong> and <strong>bathing</strong>
+in pools of it in order to keep their <strong>youth</strong>.</li>
+<li>You really need to get your hands on an old
+<strong>grimoire</strong>, currently in possession of amous
+<strong>billionaire writer</strong> and secret Brotherhood member
+<strong>K.K. Kollins</strong>. You <em>could</em> try and ask her nicely
+but, well, <em>everyone</em> knows she’s a <strong>TERF</strong>, so why
+waste your time? And what’s up with the rumours of
+<strong>disappearing</strong> goblins and a <strong>secret
+basement</strong> in her mansion?</li>
+<li>One of the <em>secret</em> and <em>private</em> boarding
+<strong>schools</strong> the Brotherhood keeps for their
+<strong>children</strong> is held <strong>hostage</strong> by a former
+student, now a <strong>Magician</strong>, who has some good points about
+its <em>absurd</em> and <em>elitist</em> education system, and some not
+so good points about <strong>blowing</strong> the place up with the kids
+still <em>inside.</em> The Brotherhood asks you to
+<strong>infiltrate</strong> the place and get the kids to
+<strong>safety</strong>. Will you <strong>help</strong> them?</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#other-groups" class="level3"
+data-number="1.6.7">
+<h3 data-number="1.6.7">Other groups</h3>
+<section id="ch001.xhtml#the-legion-of-the-one-true-god" class="level4"
+data-number="1.6.7.1">
+<h4 data-number="1.6.7.1">The Legion of the One True God</h4>
+<p>Ancient Catholic order descended from an offshoot of the
+<strong>Templars</strong>. They’re <strong>Christian</strong>
+<strong>extremists</strong> who want to promote a Magic
+<strong>Genocide</strong>. They destroy everything <em>they</em>
+consider <strong>anomalous</strong> (and you can see how broad that
+definition can be), even if making extensive use of
+‘<strong>Holy</strong> <strong>Artefacts</strong>’ in their missions.
+Their existence is a <strong>secret</strong> to <em>most</em> of the
+Church’s hierarchy.</p>
+</section>
+<section id="ch001.xhtml#blackblood-solutions" class="level4"
+data-number="1.6.7.2">
+<h4 data-number="1.6.7.2">Blackblood Solutions</h4>
+<p>Occult <strong>mercenaries</strong>. They’ll do <em>anything</em> as
+long as they get paid. And they are very well-paid indeed. Heavily
+<strong>armed</strong> and well-prepared, most of their members are
+ex-military or were from other <strong>security</strong> forces who
+stumbled upon the anomalous underworld. They favour their
+high-<strong>tech</strong> weapons but will also resort to
+<strong>magical</strong> subterfuges if needed. The
+<strong>Brotherhood</strong> and <strong>Basilisk</strong>
+<strong>Inc</strong>. often employ their services, and they are most
+certainly <strong>infiltrated</strong> by sleeper Watchers and Bureau
+moles.</p>
+</section>
+<section id="ch001.xhtml#basilisk-inc." class="level4"
+data-number="1.6.7.3">
+<h4 data-number="1.6.7.3">Basilisk Inc.</h4>
+<p>A transnational <strong>conglomerate</strong> that exploits Magic for
+<strong>profit</strong>. You’ll encounter them mainly through their
+shady operations, discarded experiments, and ruthless
+<strong>exploitation</strong>, as well as their facilities and
+researchers. They don’t usually get their hands dirty, preferring to
+hire <strong>third</strong> <strong>parties</strong> through dozens of
+shell corporations and fake accounts to do the hard work for them.
+They’re behind a great number of <strong>illicit</strong> businesses:
+from trafficking anomalous drugs to kidnapping monsters for R&amp;D
+experiments.</p>
+</section>
+<section id="ch001.xhtml#the-unforteanate-truth" class="level4"
+data-number="1.6.7.4">
+<h4 data-number="1.6.7.4">The UnForteanate Truth</h4>
+<p>A bunch of <strong>conspiracy</strong> theory
+<strong>bloggers</strong> who got very <em>close</em> to ‘the truth’ and
+don’t even <em>know</em> it. Sometimes they can be valuable
+<strong>allies</strong>. Most other times, they’re just a
+<strong>pain</strong> in the ass. If something important is happening in
+the occult world, they’ll probably have <em>something</em> to say about
+it in their <strong>forums</strong> and private
+<strong>servers</strong>, but only alongside <em>lots</em> of paranoid
+<strong>nonsense</strong>.</p>
+</section>
+</section>
+<section id="ch001.xhtml#npcs-table" class="level3" data-number="1.6.8">
+<h3 data-number="1.6.8">NPCs Table</h3>
+<p>If you need inspiration coming up with <strong>non-playable
+characters</strong>, you can roll <strong>4d20</strong> on the table
+below, following the model: <strong>A (1)(2) who (3) and wants
+(4)</strong>. Whenever there’s a reference to ‘you’, it can be read as
+either the whole group or a specific character, your choice.</p>
+<section id="ch001.xhtml#section" class="level4" data-number="1.6.8.1">
+<h4 data-number="1.6.8.1">(1)</h4>
+<ol type="1">
+<li>Cowardly</li>
+<li>Nervous</li>
+<li>Odd</li>
+<li>Flirty</li>
+<li>Angry</li>
+<li>Kind</li>
+<li>Arrogant</li>
+<li>Smelly</li>
+<li>Loud</li>
+<li>Unpredictable</li>
+<li>Mysterious</li>
+<li>Deranged</li>
+<li>Fake</li>
+<li>Obsessed</li>
+<li>Terrified</li>
+<li>Annoying</li>
+<li>Vile</li>
+<li>Moody</li>
+<li>Lazy</li>
+<li>Suspicious</li>
+</ol>
+</section>
+<section id="ch001.xhtml#section-1" class="level4"
+data-number="1.6.8.2">
+<h4 data-number="1.6.8.2">(2)</h4>
+<ol type="1">
+<li>Politician</li>
+<li>Artefact smuggler</li>
+<li>Actor</li>
+<li>Game designer</li>
+<li>Magician</li>
+<li>Scientist</li>
+<li>Ex-lover</li>
+<li>Relative</li>
+<li>Mentor</li>
+<li>Monster</li>
+<li>Cultist</li>
+<li>Detective</li>
+<li>Occultist</li>
+<li>Sub-celebrity</li>
+<li>Psychiatrist</li>
+<li>Businessperson</li>
+<li>Criminal</li>
+<li>Farmer</li>
+<li>Attorney</li>
+<li>Mercenary</li>
+</ol>
+</section>
+<section id="ch001.xhtml#section-2" class="level4"
+data-number="1.6.8.3">
+<h4 data-number="1.6.8.3">(3)</h4>
+<ol type="1">
+<li>Plays the cello</li>
+<li>Brings bad news</li>
+<li>Has a secret</li>
+<li>Drank too much</li>
+<li>Speaks in riddles</li>
+<li>Sweats profusely</li>
+<li>Was supposed to be dead</li>
+<li>Loves sauerkraut</li>
+<li>Laughs seemingly at random</li>
+<li>Is allergic to wi-fi</li>
+<li>Has a hidden arsenal</li>
+<li>Knows too much</li>
+<li>Has no sense of personal space</li>
+<li>Posts everything online</li>
+<li>Is afraid of you</li>
+<li>Is followed by shadows</li>
+<li>Is literally unable to lie</li>
+<li>Is addicted to anime</li>
+<li>Looks ready to faint</li>
+<li>Was cursed to sing instead of speaking</li>
+</ol>
+</section>
+<section id="ch001.xhtml#section-3" class="level4"
+data-number="1.6.8.4">
+<h4 data-number="1.6.8.4">(4)</h4>
+<ol type="1">
+<li>Revenge</li>
+<li>To be loved</li>
+<li>Forgiveness</li>
+<li>Your help</li>
+<li>Money</li>
+<li>A rare book</li>
+<li>To tell you a secret</li>
+<li>To collect a debt</li>
+<li>To recover what was lost</li>
+<li>To run away</li>
+<li>To cheat death</li>
+<li>To find a cure</li>
+<li>Forbidden knowledge</li>
+<li>A friend</li>
+<li>To feel alive</li>
+<li>To change the world</li>
+<li>To fix you</li>
+<li>To escape their fate</li>
+<li>To prove their worth</li>
+<li>To forget</li>
+</ol>
+</section>
+</section>
+</section>
+<section id="ch001.xhtml#places-to-visit" class="level2"
+data-number="1.7">
+<h2 data-number="1.7">places to visit</h2>
+<section id="ch001.xhtml#the-pub" class="level3" data-number="1.7.1">
+<h3 data-number="1.7.1">The Pub</h3>
+<p>The Pub is the place where <em>everyone</em> from the anomalous and
+occult corners of the city can gather to <strong>drink</strong>,
+<strong>dance</strong>, <strong>gossip</strong>, watch live
+<strong>performances</strong>, and just generally have fun together. Ran
+by a couple of <strong>loud lesbian lizards</strong>, the Pub is always
+filled with all kinds of freaks, monsters, sickos and weirdos. A strong
+<strong>geas</strong> forbids <em>anyone</em> from
+<strong>fighting</strong> inside it, so it also functions as a
+<strong>sanctuary</strong> for those who are on the run, or a
+<strong>neutral</strong> ground where <strong>conflicts</strong> can be
+peacefully resolved. Just be careful when going <strong>out</strong> —
+the geas only works <em>inside</em>, after all.</p>
+<section id="ch001.xhtml#experiences-at-the-pub" class="level4"
+data-number="1.7.1.1">
+<h4 data-number="1.7.1.1">EXPERIENCES AT THE PUB</h4>
+<ol type="1">
+<li><strong>The Vile Viziers</strong>, a <strong>live band</strong> with
+a rabid fanbase. All the band members have 7 fingers in each hand, so
+they can play <strong>impossible harmonies</strong>.</li>
+<li><strong>Mama Vitta</strong>, the best <strong>werebat drag
+queen</strong> you’ll ever see. If you’re uncomfortable with unknown
+<strong>bodily fluids</strong>, don’t come near the stage during her
+performances.</li>
+<li>The <strong>Switcheroo</strong>, a slightly
+<strong>tangerine</strong>-flavoured drink that allows you to
+<strong>switch bodies</strong> with whoever you share a cup with, for
+<em>as long as</em> there’s <strong>alcohol</strong> in your
+bloodstreams.</li>
+<li>In the <strong>smoking lounge</strong>, behind the <strong>snooker
+table</strong>, propped on a tower of pillows, you can usually find
+<strong>The Dragon</strong>, smoking a <strong>hookah</strong> and
+playing <strong>mahjong</strong>. Actually a <strong>giant
+caterpillar</strong>, they’ve embraced the once ironic nickname. The
+Pub’s rules forbid them from conducting <strong>business</strong> here,
+but if you ever need them, this is where you’ll have your first meeting.
+Their offer is very simple: they’ll do <em>you</em> a
+<strong>favour</strong> if you do <em>them</em> a
+<strong>favour</strong>.</li>
+<li>There’s a <strong>phone booth</strong> in the corner that
+<strong>teleports</strong> you to where you
+<em><strong>need</strong></em> to go, but <em>only</em> if you’re
+<strong>drunk</strong> enough. And <em>it</em> <strong>decides</strong>
+the destination for you.</li>
+<li>If you <em>somehow</em> end up with <strong>no clothes</strong>,
+don’t worry! The Pub offers a free supply of <strong>Pixie Goo</strong>
+that you can rub on your skin and make it <strong>look</strong> like
+you’re <strong>wearing</strong> anything you can imagine, from tatters
+to silk. <em><strong>Visuals</strong></em> <em>only</em>.</li>
+<li>The <strong>Beast</strong>. You have <em>heard</em> about it, but
+<em>always</em> <strong>forget</strong> it as soon as you leave.
+Everyone says something <strong>completely different</strong> about it,
+every time. Well, <em>you</em> have heard it is actually the one
+<strong>in charge</strong> here.</li>
+<li>If you’re ever in need of <strong>ideas</strong> of any kind,
+<strong>The</strong> <strong>Contraband Rimer</strong> can help you. But
+don’t ask them <strong>where</strong> their goods are smuggled from, and
+be careful: sometimes they’re <strong>potent</strong> enough to change
+<em>everything</em>.</li>
+<li>You can probably find the <strong>Mechanical Eve</strong> in a
+corner, nursing a full glass of brandy she’ll never actually drink in
+her <em>robotic</em> hand. If you sit beside her she’ll tell you she’s
+looking for a <strong>child</strong>. <em>Any</em> child will do. Hers
+is all <em>grown up</em> now, you see, and she needs to take care of
+<em>someone</em>. It’s what she believes she was
+<em><strong>made</strong></em> <em>for</em>.</li>
+<li>The <strong>Viking</strong> is a <em>balding</em>, <em>middle-aged
+guy</em> with a dad bod dressed in unnecessarily
+<strong>realistic</strong> viking clothes who was cursed to speak
+<em>only</em> through <strong>bad jokes</strong>. He claims to be an
+<strong>actual</strong> viking, somehow displaced in time and
+<strong>stranded</strong> here, but his curse makes it so no one can
+know for sure if that’s true.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#the-night-market" class="level3"
+data-number="1.7.2">
+<h3 data-number="1.7.2">The Night Market</h3>
+<p>Every night, just after the stars come out, in a large <strong>trap
+street</strong> you can only find if you <em>know</em> what to look for,
+the Night Market takes place. Dozens of vendors set their stalls there,
+selling everything imaginable, from rare potion
+<strong>ingredients</strong> to <strong>smuggled</strong> magical
+<strong>artefacts</strong>. Money is not usually accepted here, as
+<strong>bartering</strong> is the preferred form of currency. The Market
+is organised by a rotating <strong>council</strong> of merchants who
+keep an eye on everyone. <strong>Theft</strong> is harshly
+<em>punished</em>. <strong>Haggling</strong> is
+<em>recommended</em>.</p>
+<section id="ch001.xhtml#stalls-at-the-night-market" class="level4"
+data-number="1.7.2.1">
+<h4 data-number="1.7.2.1">STALLS AT THE NIGHT MARKET</h4>
+<ol type="1">
+<li>In a nondescript <strong>gutter</strong> behind two food stalls,
+there’s a nameless <strong>centipede</strong> nest. If you say the right
+<strong>password</strong>, they will give you <em>any</em>
+<strong>hallucinogen</strong> you’re looking for, in exchange for
+<em>just</em> a little sample of your <strong>DNA</strong>.</li>
+<li>An oversized <strong>tent</strong> made of black fabric, the words
+‘<strong>Vampire Noodles</strong>’ freshly scrawled on it in dark fluid.
+You can hear loud <strong>slurping</strong> noises coming from
+inside.</li>
+<li><strong>The Body Shop</strong>, where you can find a wide variety of
+<em>homegrown</em>, <em>handcrafted</em>, <em>100% organic</em>
+<strong>body parts</strong> for as cheap as your <strong>last</strong>
+<strong>memory</strong> of a <em>lost love</em>.</li>
+<li>An <strong>old man</strong> standing beside a
+<strong>suitcase</strong>. A sign in front of it says ‘<strong>Necessary
+Stuff</strong>.’ He can take out of his suitcase _<strong>any*
+item</strong> you ask for. In return, he will <em>just</em> ask you for
+a <em>small</em> <strong>favour</strong>.</li>
+<li>A <strong>chaotic stall</strong>, full of what looks like random
+<strong>junk</strong> at first, tended by someone who’s pretty obviously
+<strong>three goblins in a trenchcoat</strong>. A sign oddly says
+<strong>’NOT BOOMBZ</strong>’. Looking closer you can see that
+<em>every</em> <em>single</em> <em>item</em> on display is actually a
+<strong>bomb</strong>. Tonight they have explosive
+<strong>bonsai</strong>, explosive <strong>candy</strong>, and explosive
+<strong>self-help books</strong> on sale.</li>
+<li>The <strong>Dollmaker</strong> is a doll <em>themselves</em>, but
+you should <em>never</em> point this out. They have
+<strong>dolls</strong> of <strong>all kinds</strong> on display: creepy
+<strong>puppets</strong>, <strong>voodoo</strong> dolls,
+<strong>sex</strong> dolls, <strong>rag</strong> dolls,
+<strong>cursed</strong> dolls, and a giant <strong>yellow</strong>
+<strong>bird</strong> that looks terrified and sometimes seems to follow
+you with its eyes.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#the-library" class="level3"
+data-number="1.7.3">
+<h3 data-number="1.7.3">The Library</h3>
+<p>The Library is said to be <strong>infinite</strong>. It <em>is</em>,
+at least, <strong>enormous</strong>. There you can find not only
+<strong>books</strong> but all kinds of archival
+<strong>records</strong>. <strong>People</strong>,
+<strong>not-people</strong> and <strong>once-people</strong> of all
+kinds come here from all over, but it <em>never</em> feels noisy or
+crowded. The <strong>Librarians</strong>, with their
+<strong>unblinking</strong> stares, seem to be <em>everywhere</em> and
+<em>nowhere</em> at once. This comes in handy, for anyone can easily get
+<strong>lost</strong> in the <strong>labyrinthine</strong> corridors
+without their help. Just <em>don’t</em> <strong>damage</strong> the
+books: they are rumoured to <strong>eat</strong> whoever does that.</p>
+<section id="ch001.xhtml#things-you-can-read-at-the-library"
+class="level4" data-number="1.7.3.1">
+<h4 data-number="1.7.3.1">THINGS YOU CAN READ AT THE LIBRARY</h4>
+<ol type="1">
+<li><em>Exquisite Umbras</em> (202x), by <strong>Wendy Wo and Dr. Franky
+N. Further (org.)</strong>. A collection of weird and horrifying
+<strong>true</strong> <strong>tales</strong> <strong>of terror</strong>
+compiled from rumours, whispers, first-hand accounts and stunning
+photographic evidence.</li>
+<li><em>The Truest Bible</em> (????), <strong>unknown
+writer(s)</strong>. A collection of texts <strong>similar</strong> in
+style and content to the Christian <strong>Bible</strong>, but seemingly
+far more <strong>ancient</strong>. It consists of an
+<strong>alternate</strong> <strong>history</strong> of the world,
+beginning with the creation of <strong>Woman</strong> by breaking her
+own rib and ending with the <strong>Fall of Man</strong> and the
+beginning of <strong>Paradise</strong> for everyone else after His
+fall.</li>
+<li>The only remaining copies of <em>The Dragons of Super
+Friendship</em> (2018-2019), a <strong>cartoon</strong> that rapidly
+attracted a passionate adult <strong>fandom</strong>. Described as
+‘<strong>wholesome</strong>’ and ‘<strong>cozy</strong>’, it was praised
+for its <strong>conflict-free</strong> story and good queer
+<strong>representation</strong>. But then the <strong>murders</strong>
+started.</li>
+<li><em>My Year as an Ant</em> (1649), by <strong>Roberto
+Latonta</strong>. The unfinished memoir of XVII century explorer Roberto
+Figueroa Latonta, documenting his life among the Giant Ants of the lost
+underground city of <strong>Hormiguero</strong>.</li>
+<li>The <em>Audiovisual Records Archive</em> somehow holds
+<em>actual</em> <strong>footage</strong> of the <strong>death</strong>
+and <strong>birth</strong> of <em>every</em> single human being, but
+those are usually <strong>restricted</strong>. You’re allowed to watch
+<strong>yours</strong>, though it isn’t advised — <em>especially</em>
+your birth.</li>
+<li><em>An untitled spiral bound notebook with a yellow cover</em>
+(c. 2010), <strong>unknown writer</strong>. Contains six
+<strong>pornographic</strong> stories around an entity known only as
+<em><strong>The King in Yellow</strong></em>. All the stories seem to
+have been printed from popular <strong>fanfiction</strong> website
+<em>Archive of Our Own</em>, but no such records exist in the site
+itself. Possible effects on the reader include <strong>nausea</strong>,
+<strong>arousal</strong> and <strong>unwilling
+teleportation</strong>.</li>
+<li><em>Waste Not, Want Not, vol. II: Fun with Fluids</em> (1949), by
+<strong>Montgomery Jeffreys</strong>. Part of a seven-volume collection
+of cookbooks about how to prepare <strong>homemade</strong> food from
+<strong>corpses</strong>. This one focuses on creative ways to make use
+of the wide variety of <strong>fluids</strong> found in the human
+body.</li>
+<li>An <em>unlabelled vinyl record</em> (c. 1970) consisting of 22
+minutes and 13 seconds of <strong>silence</strong> intercut with
+<strong>static</strong>, after there is a faint
+<strong>whisper</strong>. <em>Everyone</em> hears it say something
+<strong>different</strong>, but it’s <em>always</em> a
+<strong>threat</strong> and it <em>always</em> comes
+<strong>true</strong>.</li>
+<li>The <em>blueprints for a prototype</em> (c. 1500), attributed to
+<strong>Leonardo da Vinci</strong>, containing details for building a
+fully <strong>functional</strong> <strong>giant</strong> (5m)
+<strong>robot</strong> with only easily available materials.</li>
+<li><em>The White Woodpecker Farm</em> (1918). A discarded children’s
+novel draft by author <strong>Monteiro Lobato</strong>, later reworked
+as his <em>Yellow Woodpecker</em> series. The book is set in an idyllic
+<strong>farm</strong>, presumably in rural Brazil. Through a string of
+loosely related vignettes, it follows the <strong>adventures</strong> of
+children Lucia and Pete as they travel to other <strong>worlds</strong>,
+make <strong>friends</strong>, burn <strong>crosses</strong>, and commit
+<strong>genocide</strong>.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#mrs.-lis-arcane-assortments" class="level3"
+data-number="1.7.4">
+<h3 data-number="1.7.4">Mrs. Li’s Arcane Assortments</h3>
+<p>Mrs. Li sells <strong>herbs</strong>, <strong>potions</strong> and
+all kinds of random paranormal <strong>paraphernalia</strong>. Every
+centimetre of this small store is packed with stuff that’s completely
+unrelated to each other. She specialises in not having a
+<em>singular</em> speciality, which is really quite
+<strong>useful</strong> for her clientele. If you’re ever in need of
+something very <strong>specific</strong>, <strong>unusual</strong>, or
+not-quite-<strong>illegal</strong>, you can probably find it here.</p>
+<section id="ch001.xhtml#paranormal-paraphernalia" class="level4"
+data-number="1.7.4.1">
+<h4 data-number="1.7.4.1">PARANORMAL PARAPHERNALIA</h4>
+<ol type="1">
+<li>The latest edition of <strong>Vampire: The Horny</strong>, the
+best-selling erotic magazine for blood-suckers of all kinds.</li>
+<li>A <strong>gacha</strong> machine that gives you a random
+<strong>cursed rock</strong> to put in your enemies’ drawers.</li>
+<li>A pouch of <strong>curry</strong> that can start a
+<strong>fire</strong> anywhere you place it. Tastes
+<strong>delicious</strong>.</li>
+<li>The best artisanal <strong>belladonna</strong> <strong>beer</strong>
+you can find (65% ABV).</li>
+<li><strong>Pickled</strong> <strong>eyeballs</strong>, very good
+against migraines. Gluten-free.</li>
+<li>A <strong>chewing</strong> <strong>gum</strong> that allows you to
+learn a <strong>secret</strong> from a random person you know. Available
+in mint, strawberry, and mothball flavours.</li>
+<li><strong>Sunglasses</strong> that show the wearer the
+<strong>truth</strong> whenever someone <strong>lies</strong> in front
+of them. Currently <strong>deactivated</strong> due to
+Capitalism-Induced Overload, but still look pretty
+<strong>cool</strong>.</li>
+<li>A plain-looking <strong>key</strong>. It can <strong>open</strong>
+<em>any</em> lock of its size, but <em>always</em> gets
+<strong>jammed</strong>.</li>
+<li><strong>The Best Jokes of All Time, v. 13: Yo Mama Edition</strong>.
+Recite any incantation from this book to make whoever hears it enter a
+state of <strong>uncontrollable rage</strong>.</li>
+<li>An old <strong>tamagotchi</strong> digital pet, still working, with
+weird <strong>mods</strong>: the pet in it looks like a
+<strong>person</strong> and it holds a sign that says
+‘<strong>HELP</strong>’.</li>
+</ol>
+</section>
+</section>
+<section id="ch001.xhtml#places-table" class="level3"
+data-number="1.7.5">
+<h3 data-number="1.7.5">Places Table</h3>
+<p>If you need <strong>inspiration</strong> coming up with places to use
+in your game, you can roll <strong>2d20</strong> on the table below and
+<strong>associate</strong> the words — any way you want it, <em>doesn’t
+have to be literal</em> — to spark your creativity.</p>
+<table>
+<thead>
+<tr class="header header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><strong>1</strong></th>
+<th style="text-align: center;"><strong>2</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;">Abandoned</td>
+<td style="text-align: center;">Factory</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;">Secret</td>
+<td style="text-align: center;">Sewer</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">Cursed</td>
+<td style="text-align: center;">Train Station</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">Sentient</td>
+<td style="text-align: center;">Library</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;">Haunted</td>
+<td style="text-align: center;">Parking Garage</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;">Destroyed</td>
+<td style="text-align: center;">School</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;">Infested</td>
+<td style="text-align: center;">Cathedral</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;">Blood</td>
+<td style="text-align: center;">Mausoleum</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;">Antediluvian</td>
+<td style="text-align: center;">Nightclub</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;">Flooded</td>
+<td style="text-align: center;">Park</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>11</strong></td>
+<td style="text-align: center;">Witch</td>
+<td style="text-align: center;">Cavern</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;">Fake</td>
+<td style="text-align: center;">Barn</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>13</strong></td>
+<td style="text-align: center;">Buried</td>
+<td style="text-align: center;">Junkyard</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>14</strong></td>
+<td style="text-align: center;">Holy</td>
+<td style="text-align: center;">Docks</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>15</strong></td>
+<td style="text-align: center;">Monstrous</td>
+<td style="text-align: center;">Mansion</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>16</strong></td>
+<td style="text-align: center;">Labyrinthine</td>
+<td style="text-align: center;">Shopping Mall</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>17</strong></td>
+<td style="text-align: center;">Moving</td>
+<td style="text-align: center;">Hospital</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: center;">Extradimensional</td>
+<td style="text-align: center;">Theatre</td>
+</tr>
+<tr class="odd odd">
+<td style="text-align: center;"><strong>19</strong></td>
+<td style="text-align: center;">Mouldy</td>
+<td style="text-align: center;">Forest</td>
+</tr>
+<tr class="even even">
+<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;">Corpse</td>
+<td style="text-align: center;">Restaurant</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</body>
+</html>
