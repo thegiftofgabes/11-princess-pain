@@ -52,3 +52,4 @@ When you try something risky, chancy or hasty, choose an approach and the GM wil
 
 Princess: roll over that approach's number.
 Pain: roll under that approach's number.
+
