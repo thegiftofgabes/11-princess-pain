@@ -29,7 +29,7 @@ Your Gender is also your Royal Domain.
 
 1 - Mark how stongly each statement is true (2) or false (4). 
 
-|                                           |     |     |     |     | approach  |
+|                                           |     |     |     |     |           |
 | ----------------------------------------- | --- | --- | --- | --- | --------- |
 | Your childhood was full of love and care. | 2   | 3   | 4   | 5   | kindness  |
 | You socialized aplenty as you grew.       | 2   | 3   | 4   | 5   | etiquete  |
